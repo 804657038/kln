@@ -1,0 +1,505 @@
+
+body,html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/*.home-wrap*/
+.home-wrap{
+    height: 100%;
+    width: 100%;
+    background: url("../images/bg_02.png")no-repeat;
+    background-size: 100%;
+    position: fixed;
+}
+.logo{
+    width: 1.75rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.6rem;
+}
+.logo .logo-img{
+    width: 100%;
+}
+.food{
+    width: 100%;
+    height: 10.5rem;
+    background: url("../images/food.png")no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+}
+.food .Advertisement-wrap{
+    width: 100%;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    display: flex;
+    justify-content: center;
+    position:  absolute;
+    bottom: 2.2rem;
+}
+.food .Advertisement-wrap .Advertisement{
+    width: 80%;
+}
+.food .Advertisement-wrap .Advertisement .Advertisement-img{
+    width: 100%;
+}
+.food .country{
+    font-size: 0.24rem;
+    color: #fff;
+    position:  absolute;
+    bottom: 1.88rem;
+    text-align:  center;
+    width: 100%;
+}
+.food .btn-wrap{
+    position: absolute;
+    bottom: 0.6rem;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 0 1px darkblue, 1px 0 darkblue, 1px 0 red, 0 1px darkblue;
+}
+.food .btn-wrap .btn{
+    width: 2.9rem;
+    height: 0.85rem;
+    margin: 0 0.25rem;
+    background: url("../images/btn.png")no-repeat;
+    background-size: 100% 100%;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.28rem;
+    color: #fff;
+}
+/*      <!--优惠劵及邀请码-->*/
+.fill-wrap{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg_fill.png")no-repeat;
+    background-size: 100% 100%;
+    position:  fixed;
+    overflow: auto;
+}
+.fill-wrap .fill-explain{
+    width: 1.7rem;
+    height: 0.6rem;
+    background:url("../images/12_04.png")no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 0.4rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow: 01px 1px 4px #333333;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.26rem;
+}
+.fill-wrap .fill-main{
+    width: 90%;
+    padding-top: 1.65rem;
+    margin: 0 auto;
+}
+.fill-wrap .fill-main .fill-invitation{
+    color: #fff;
+    font-size: 0.26rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0.3rem;
+}
+
+.fill-wrap .fill-main .fill-Coupon{
+    height: 3.83rem;
+    background: url("../images/Coupon.png")no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+}
+.fill-wrap .fill-main .fill-Coupon .fill-Coupon-content-wrap{
+    padding-left: 1rem;
+}
+.fill-wrap .fill-main .fill-Coupon .fill-Coupon-content{
+    font-size: 0.3rem;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+}
+.fill-wrap .fill-main .fill-Coupon .fill-Coupon-content-wz{
+    font-size: 0.26rem;
+    color: #fff;
+}
+.fill-wrap .fill-main .fill-Coupon .fill-Coupon-content .Coupon-span{
+    font-size: 0.8rem;
+    color: #fff;
+    padding-right: 0.1rem;
+}
+/*表单*/
+.please-fill-wrap{
+    width: 100%;
+    text-align: center;
+    padding-top: 0.45rem;
+}
+.please-fill-wrap .please-fill{
+    color: #fff;
+    font-size: 0.26rem;
+    margin-bottom: 0.25rem;
+}
+.please-fill-wrap .please-fill.please-fills{
+    color: #f83675;
+    font-size: 0.28rem;
+    margin-bottom: 0.4rem;
+}
+.please-fill-wrap .please-input-wrap{
+    width: 100%;
+}
+.please-fill-wrap .please-input-wrap .please-input{
+    width: 90%;
+    height: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    -moz-box-shadow:2px 2px 5px #666;
+    -webkit-box-shadow:2px 2px 5px #666;
+    box-shadow:2px 2px 5px #666;
+    margin-bottom: 0.1rem;
+    padding-left: 0.5rem;
+}
+.please-fill-wrap .please-input-wrap .please-input.please-inputs{
+    margin-bottom: 0.2rem;
+}
+.please-fill-wrap .please-input-wrap .please-input::placeholder{
+    color: #bbbbbb;
+}
+.please-fill-wrap .please-input-wrap .please-input-area{
+    width: 82%;
+    height: 2.4rem;
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+}
+.please-fill-wrap .please-input-wrap .please-input-area::placeholder{
+    color: #bbbbbb;
+}
+.picker-wrap{
+    position:relative;
+}
+.roww{
+    position: absolute;
+    right: 0.4rem;
+    width: 0.16rem;
+    height: 100%;
+    display:flex;
+    align-items:  center;
+}
+.roww .roww-img{
+    width: 100%;
+}
+.please-btn{
+    width:100%;
+    height: 1.2rem;
+    background-color: #d70545;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    color: #fff;
+    font-size: 0.3rem;
+    font-weight:  bold;
+}
+/*中奖*/
+.fw{
+    width: 1.3rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    background: url("../images/fw.png")no-repeat;
+    background-size: 100%;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    color: #fff;
+    font-size: 0.26rem;
+}
+.winning-main{
+    padding-top: 1.33rem;
+}
+.winning-Endorsement-wrap{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    /* position: fixed; */
+    /* top: 1.33rem; */
+}
+.winning-Endorsement{
+    width: 90%;
+}
+.winning-Endorsement .winning-Endorsement-img{
+    width: 100%;
+}
+.winning-user{
+    width: 92%;
+    background: url("../images/Winning_03.png")no-repeat;
+    background-size: 100% 100%;
+    margin:  0 auto;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    position:  relative;
+    margin-bottom: 1.5rem;
+    margin-top: -6px;
+}
+.winning-user-header{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+.winning-user-header .winning-user-pic{
+    width:2.26rem;
+    height: 0.43rem;
+}
+.winning-user-header .winning-user-pic .winning-user-img{
+    width: 100%;
+}
+.winning-user-men{
+    width: 0.38rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+.Recommend-wz{
+    text-align: center;
+    color: #fff;
+    font-size: 0.22rem;
+    font-family: sans-serif;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.distance{
+    width: 100%;
+    height: 0.6rem;
+    background-color: #fff;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-item{
+    display: flex;
+    color: #007aff;
+}
+.user-wrap-big{
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.user-wrap{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-wrap .user-information{
+    margin: 0 0.77rem;
+    color: #fff;
+    font-size: 0.26rem;
+    margin-top: 0.3rem;
+}
+.Open-user{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    color: #fff;
+    font-size: 0.22rem;
+}
+/*暂无内容*/
+.no-content{
+    width: 100%;
+    height: 4.5rem;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-content-img{
+    width: 2rem;
+    height: 2.7rem;
+}
+/*成为合伙人页面*/
+.fill-invitation-hh{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.8rem;
+    color: #fff;
+    font-size: 0.26rem;
+}
+.fill-fafsa{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.15rem;
+}
+.fill-fafsa-img{
+    width:4.8rem;
+    height: 0.6rem;
+}
+.activity-btn-wrap{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.8rem;
+}
+.activity-btns{
+    width:2.9rem;
+    height: 0.85rem;
+    background: url("../images/btn.png")no-repeat center;
+    background-size: 100%;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.28rem;
+    text-shadow: 0 1px darkblue, 1px 0 darkblue, 1px 0 red, 0 1px darkblue;
+}
+/*海报*/
+.poster-wrap{
+    width: 100%;
+    height: 100%;
+    background: url("../images/posterbg_02.png")no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+}
+.poster-logo{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.1rem;
+    padding-bottom: 0.4rem;
+}
+.poster-logo .poster-logo-img{
+    width: 1.75rem;
+    height: 0.52rem;
+}
+.poster-mid{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poster-mid .poster-mid-img{
+    width: 4.86rem;
+    height: 0.6rem;
+}
+.poster-main{
+    width: 2.9rem;
+    margin: 0 auto;
+    padding-top: 1.4rem;
+}
+.poster-sm{
+    width: 100%;
+    font-size:0.72rem;
+    color: #008cd6;
+    background-color: #fff;
+    font-family: serif;
+}
+.poster-Admission{
+    font-size: 0.72rem;
+    color: #fff;
+}
+.poster-home{
+     display: inline-block;
+ }
+.poster-home .poster-home-img{
+    width: 2.91rem;
+    height: 0.97rem;
+}
+.poster-wz{
+    font-size: 0.26rem;
+    color: #fff;
+    font-family: unset;
+}
+.poster-code{
+    width: 100%;
+    margin-top: 0.5rem;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.poster-code .poster-code-img{
+    width: 2.73rem;
+    height: 2.73rem;
+}
+.poster-ca{
+    position: absolute;
+    bottom: 0.3rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 0.22rem;
+}

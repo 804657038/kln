@@ -1,0 +1,222 @@
+img{
+  width: 100%;
+}
+.centerX{
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+.centerY{
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+.center{
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+/*浮动样式*/
+.clearfloat:after {display: block;clear: both;content: "";visibility: hidden;height: 0; }
+.clearfloat{zoom: 1;}
+.floatl{float: left}
+.floatr{float: right}
+
+#dgyz{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/bg01.png") no-repeat top #1f9cde;
+  background-size: 100% auto;
+  display: none;
+  >div{
+    position: absolute;
+  }
+  .logo{
+    width: 26%;
+    top: 4%;
+    left: 8%;
+  }
+  .title01{
+    width: 45%;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  .input01{
+    width: 80%;
+    top: 30%;
+    display: -webkit-flex;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    #shuru{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      opacity: 0;
+      background-color: transparent;
+      border: 0;
+      color:transparent;
+    }
+    .i1-label{
+      min-width: 16%;
+      color: #fdebf1;
+      font-size: 0.24rem;
+      margin-right: 0.25rem;
+    }
+    .label2{
+      min-width: 22%;
+    }
+    .i1-input{
+      width: 79%;
+      position: relative;
+      .inputWrap{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        padding: 0 0.2rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        input{
+          width: 100%;
+          border: 0;
+          font-size: 0.24rem;
+          color: #333333;
+          background-color: transparent;
+        }
+        input::placeholder{
+          font-size: 0.24rem;
+          color: #999999;
+          font-weight: lighter;
+        }
+        input:-moz-placeholder {
+          font-size: 0.24rem;
+          color: #999999;
+          font-weight: lighter;
+        }
+        input::-moz-placeholder {
+          font-size: 0.24rem;
+          color: #999999;
+          font-weight: lighter;
+        }
+        input:-ms-input-placeholder {
+          font-size: 0.24rem;
+          color: #999999;
+          font-weight: lighter;
+        }
+        input::-webkit-input-placeholder {
+          font-size: 0.24rem;
+          color: #999999;
+          font-weight: lighter;
+        }
+      }
+    }
+    .inputs{
+      width: 76%;
+      display: flex;
+      align-items: center;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+    }
+    .input2{
+      width: 15%;
+      margin-right: 0.4rem;
+      .inputWrap{
+        input{
+          font-size: 0.3rem;
+          color: #333333;
+        }
+        input[disabled]{
+          font-size: 0.3rem;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .btn01{
+    width: 30%;
+    top: 42%;
+    .textWrap{
+      display: flex;
+      align-items: center;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0.24rem;
+      color: #ebf2f6;
+    }
+  }
+  .bottom{
+    width: 100%;
+    bottom: 0;
+  }
+}
+#dgsy{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/bg01.png") no-repeat top #1f9cde;
+  background-size: 100% auto;
+  >div{
+    position: absolute;
+  }
+  .logo02{
+    width: 70%;
+    top: 8%;
+  }
+  .codeWrap{
+    width: 35%;
+    top: 28%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .code{
+      width: 90%;
+      position: absolute;
+    }
+  }
+  .codeText{
+    top: 54%;
+    font-size: 0.28rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .bottom{
+    width: 100%;
+    bottom: 0;
+  }
+}

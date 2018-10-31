@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>科徕尼-导购</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script type="text/javascript" src="js/gevas.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--导购员首页-->
+    <div id="dgsy" v-if="status == 0">
+        <div class="logo02 centerX">
+            <img src="images/logo02.png" alt="">
+        </div>
+        <div class="codeWrap centerX">
+            <img src="images/img04.png" alt="">
+            <div class="code center">
+                <img src="images/erwei01.png" alt="">
+            </div>
+        </div>
+        <div class="codeText centerX">加入科徕尼&ensp;&ensp;成为合伙人</div>
+        <div class="bottom">
+            <img src="images/bg01_1.png" alt="">
+        </div>
+    </div>
+    <!--导购员验证-->
+    <div id="dgyz" v-if="status == 1">
+        <div class="logo">
+            <img src="images/logo01.png" alt="">
+        </div>
+        <div class="title01">
+            <img src="images/img01.png" alt="">
+        </div>
+
+        <div class="input01 centerX" v-show="step == 0">
+            <div class="i1-label">手机验证</div>
+            <div class="i1-input">
+                <img src="images/img02.png" alt="">
+                <div class="inputWrap">
+                    <input type="number" placeholder="请输入手机号码" v-model="formData.phone">
+                </div>
+            </div>
+        </div>
+        <div class="btn01 centerX" v-show="step == 0">
+            <img src="images/btn01.png" alt="">
+            <div class="textWrap" @click="submit">
+                <span>发送验证码</span>
+            </div>
+        </div>
+
+        <div class="input01 centerX" v-show="step == 1">
+            <div class="i1-label label2">输入验证码</div>
+            <!--oninput="if(value.length>5)value=value.slice(0,3)"-->
+            <input id="shuru" type="number"  v-model="write">
+            <div class="inputs" @click="writeIn">
+                <div class="i1-input input2">
+                    <img src="images/img03.png" alt="">
+                    <div class="inputWrap">
+                        <input id="input1" type="number" v-model="formData1.num1" disabled>
+                    </div>
+                </div>
+                <div class="i1-input input2">
+                    <img src="images/img03.png" alt="">
+                    <div class="inputWrap">
+                        <input id="input2" type="number" v-model="formData1.num2" disabled>
+                    </div>
+                </div>
+                <div class="i1-input input2">
+                    <img src="images/img03.png" alt="">
+                    <div class="inputWrap">
+                        <input id="input3" type="number" v-model="formData1.num3" disabled>
+                    </div>
+                </div>
+                <div class="i1-input input2">
+                    <img src="images/img03.png" alt="">
+                    <div class="inputWrap">
+                        <input id="input4" type="number" v-model="formData1.num4" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn01 centerX" v-show="step == 1">
+            <img src="images/btn01.png" alt="">
+            <div class="textWrap" @click="navTo">
+                <span>前往</span>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img src="images/bg01_1.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/function.js"></script>
+<!--<script src="js/picker.min.js"></script>-->
+<!--<script src="js/city.js"></script>-->
+<!--<script src="js/djs.js"></script>-->
+<!--<script src="js/index.js"></script>-->
+<!--<script type="text/javascript" src="js/adds.js"></script>-->

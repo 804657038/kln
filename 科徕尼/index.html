@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mask.css">
+    <title>科徕尼</title>
+</head>
+<body>
+<div id="app">
+      <!--首页-->
+    <div class="home-wrap" v-if="staus == 1">
+          <!--logo-->
+           <div class="logo">
+               <img src="images/logo.png" class="logo-img" alt="">
+           </div>
+          <!--底部-->
+          <div class="food">
+              <div class="Advertisement-wrap">
+                 <div class="Advertisement">
+                     <img src="images/wenzi.png" class="Advertisement-img" alt="">
+                 </div>
+              </div>
+              <div class="country">
+                  {{text}}
+              </div>
+              <div class="btn-wrap">
+                  <div class="btn">
+                      {{partnership}}
+                  </div>
+                  <div class="btn">
+                       {{Discount}}
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--填写信息-->
+    <div class="fill-wrap" v-if="staus == 1">
+        <!--logo-->
+        <div class="logo">
+            <img src="images/logo.png" class="logo-img" alt="">
+        </div>
+        <div class="fill-explain"></div>
+        <div class="fill-main">
+            <!--优惠劵及邀请码-->
+            <div class="fill-Coupon">
+                <div class="fill-invitation">
+                    {{invitation}}
+                </div>
+                <div class="fill-Coupon-content-wrap">
+                    <div class="fill-Coupon-content">
+                    <span class="Coupon-span">{{money}}</span>优惠券
+                </div>
+                    <div class="fill-Coupon-content-wz">仅限购买指定智能锁使用</div>
+                </div>
+
+            </div>
+            <!--表单-->
+            <form action="#">
+                <div class="please-fill-wrap">
+                    <div class="please-fill">请填写相应信息领取优惠券哦~</div>
+                    <div class="please-input-wrap">
+                        <input type="text" class="please-input" name="name" placeholder="请输入您的姓名">
+                        <input type="text" class="please-input" name="phone" placeholder="请输入您的手机号码">
+                        <div class="picker-wrap">
+                            <div class="roww"><img src="images/roww.png" class="roww-img" alt=""></div>
+                        <input type="text" id="picker" placeholder="请选择省市区" class="please-input ">
+                        </div>
+                        <textarea name="#" id="" class="please-input-area" placeholder="请填写您的详细地址" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div style="width: 100%;height:1.8rem;"></div>
+                <div class="please-btn">确认领取</div>
+            </form>
+        </div>
+    </div>
+      <!--中奖-->
+    <div class="fill-wrap" v-if="staus == 1">
+        <!--返回-->
+        <div class="fw">
+           返回
+        </div>
+        <div class="fill-explain"></div>
+        <!--中奖main-->
+        <div class="winning-main">
+            <div class="winning-Endorsement-wrap">
+                <div class="winning-Endorsement">
+                <img src="images/xx_03.png" class="winning-Endorsement-img" alt="">
+            </div>
+
+            </div>
+            <div class="winning-user">
+                <div class="winning-user-header">
+                    <div class="winning-user-pic">
+                        <img src="images/ssf_03.png" class="winning-user-img" alt="">
+                    </div>
+                    <div class="winning-user-men">（{{men}}<span>人</span>）</div>
+                </div>
+                <div class="Recommend-wz">推荐 <b>{{purchase}}</b>，可免单</div>
+                <div class="distance">
+                    <div class="time-item">
+                        离结束仅剩
+                        <span id="day_show">0天</span>
+                        <strong id="hour_show">0时</strong>
+                        <strong id="minute_show">0分</strong>
+                        <strong id="second_show">0秒</strong>
+                    </div><!--倒计时模块-->
+
+                </div>
+
+                <!--有内容-->
+                <!--<div class="user-wrap-big">-->
+                    <!--<div class="user-wrap">-->
+                    <!--<div class="user-information">小舟子</div>-->
+                    <!--<div class="user-information">130*****451</div>-->
+                <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+                    <!--<div class="user-wrap">-->
+                        <!--<div class="user-information">小舟子</div>-->
+                        <!--<div class="user-information">130*****451</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="Open-user">展开 &nbsp; <span class="xia">↓</span></div>-->
+
+
+                <!--暂无内容-->
+                <div class="no-content">
+                    <img src="images/no-user_03.png" class="no-content-img" alt="">
+                </div>
+
+
+            </div>
+            <div class="please-btn">立即拉人</div>
+        </div>
+    </div>
+    <!--成为合伙人-->
+    <div class="fill-wrap" v-if="staus == 1">
+        <!--logo-->
+        <div class="logo">
+            <img src="images/logo.png" class="logo-img" alt="">
+        </div>
+            <div class="fill-invitation-hh">
+                {{invitation}}
+            </div>
+        <div class="fill-main">
+            <!--优惠劵及邀请码-->
+            <div class="fill-fafsa">
+
+                <img src="images/fafsa_03.png" class="fill-fafsa-img" alt="">
+
+            </div>
+            <!--表单-->
+            <form action="#">
+                <div class="please-fill-wrap">
+                    <div class="please-fill please-fills">合伙人推荐5人成功购买可免单~</div>
+                    <div class="please-input-wrap">
+                        <input type="text" class="please-input please-inputs" name="name" placeholder="请输入您的姓名">
+                        <input type="text" class="please-input please-inputs" name="phone" placeholder="请输入您的手机号码">
+                        <div class="picker-wrap">
+                            <div class="roww"><img src="images/roww.png" class="roww-img" alt=""></div>
+                            <input type="text" id="picker" placeholder="请选择省市区" class="please-input ">
+                        </div>
+                        <textarea name="#" id="#" class="please-input-area" placeholder="请填写您的详细地址" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="activity-btn-wrap">
+                    <div class="activity-btns">
+                        成为合伙人
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--海报-->
+    <div class="poster-wrap">
+        <div class="poster-logo">
+            <img src="images/logo.png" class="poster-logo-img" alt="">
+        </div>
+        <div class="poster-mid">
+            <img src="images/fafsa_03.png" class="poster-mid-img" alt="">
+        </div>
+        <div class="poster-main">
+            <div class="poster-sm">扫码预约</div>
+            <div class="poster-Admission">免费试用</div>
+            <div class="poster-home">
+                <img src="images/poster_03.png" class="poster-home-img" alt="">
+            </div>
+            <div class="poster-wz">更可获得100元购机优惠</div>
+            <div class="poster-code">
+                <img src="images/poster_07.png" class="poster-code-img" alt="">
+            </div>
+        </div>
+        <div class="poster-ca">
+            长按保存图片
+        </div>
+    </div>
+
+    <!--通用弹窗-->
+    <div class="mask-none">
+    <div class="mask-wrap">
+        <div class="mask">
+            <div class="mask-xx"></div>
+            <div class="btn-wrap">
+                <div class="btn">
+                    取消
+                </div>
+                <div class="btn btns">
+                    确定使用
+                </div>
+            </div>
+            <div class="mask-content">
+                {{contents}}
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--活动说明弹窗-->
+    <div class="mask-hd-none" >
+         <div class="mask-hd-wrap">
+             <div class="mask-hd">
+                 <div class="mask-xx"></div>
+                 <div class="mask-gz">
+                     <img src="images/hdgz_03.png" class="mask-gz-img" alt="">
+                 </div>
+                 <ol class="ol-custom">
+                     <li class="li-custom">用户在线领取，凭券可到实体门店购买指定型号（具体型号由门店而定）可以减免100元；全国限量50000张。</li>
+                     <li class="li-custom">每个用户限购一张优惠券。</li>
+                     <li class="li-custom">每张优惠券仅限用于购买一台智能产品。</li>
+                     <li class="li-custom">使用截止日期：2018年12月31日。</li>
+
+                 </ol>
+                 <div class="btn-hd-wrap">
+                 <div class="btn btns">好的</div>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/function.js"></script>
+<script src="js/picker.min.js"></script>
+<script src="js/city.js"></script>
+<script src="js/djs.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/adds.js"></script>
+<script src="js/mask.js"></script>
