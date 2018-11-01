@@ -238,7 +238,7 @@
         </div>
     </div>
     <!--海报-->
-    <div class="poster-wrap">
+    <div class="poster-wrap"  v-if="staus == 1">
         <div class="poster-logo">
             <img src="images/logo.png" class="poster-logo-img" alt="">
         </div>
@@ -260,7 +260,33 @@
             长按保存图片
         </div>
     </div>
+    <!--我的优惠劵-->
+    <div class="fill-wrap" v-if="staus == 0">
+        <!--返回-->
+        <div class="fw">
+            返回
+        </div>
+        <div class="fill-explain"></div>
+        <div class="fill-main">
+            <!--优惠劵及邀请码-->
+            <div class="fill-Coupon">
+                <div class="fill-invitation">
+                    {{invitation}}
+                </div>
+                <div class="fill-Coupon-content-wrap">
+                    <div class="fill-Coupon-content">
+                        <span class="Coupon-span">{{money}}</span>优惠券
+                    </div>
+                    <div class="fill-Coupon-content-wz">仅限购买指定智能锁使用</div>
+                </div>
 
+            </div>
+
+
+                <div class="please-btn">核销使用</div>
+
+        </div>
+    </div>
     <!--通用弹窗-->
     <div class="mask-none">
     <div class="mask-wrap">
