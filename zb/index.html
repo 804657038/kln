@@ -14,7 +14,7 @@
 
 
     <!--加载页-->
-     <div class="zb-wrap" v-if="staus == 1">
+     <div class="zb-wrap" id="load" v-if="staus == 0">
          <!--logo-->
          <div class="logo">
              <img src="images/logo_03.png" class="logo-img" alt="">
@@ -44,7 +44,7 @@
 
      </div>
     <!--首页1-->
-    <div class="zb-wrap" v-if="staus == 1">
+    <div class="zb-wrap" id="home"  style="display: none" >
         <!--logo-->
         <div class="logo">
             <img src="images/logo_03.png" class="logo-img" alt="">
@@ -176,7 +176,8 @@
 
     </div>
     <!--中奖名单-->
-    <div class="zb-wrap" v-if="staus == 1">
+    <div class="zb-auto"  v-if="staus ==1">
+    <div class="zb-wraps">
         <div class="zb-winning-fw zb-winning-fw-current">
             < 返回
         </div>
@@ -350,6 +351,7 @@
 
 
     </div>
+    </div>
     <!--填写信息-->
     <div class="zb-wrap" v-if="staus == 1">
         <div class="zb-winning-fw zb-winning-fw-current">
@@ -422,7 +424,8 @@
 
     </div>
     <!--/*再次购买-我的卡劵*/-->
-    <div class="zb-wrap" v-if="staus == 1">
+    <div class="zb-auto" v-if="staus == 1">
+    <div class="zb-wraps" >
         <div class="zb-winning-fw zb-winning-fw-current">
             < 返回
         </div>
@@ -470,16 +473,18 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <!--点击购买-->
-        <div class="purchase">
+        <div class="purchase purchase-zc">
             <div class="purchase-btn" >再次购买</div>
         </div>
 
 
     </div>
+    </div>
     <!--扫码-我的卡劵-->
-    <div class="zb-wrap" v-if="staus == 0">
+    <div class="zb-wrap" v-if="staus == 1">
         <div class="zb-publish">
             <div class="zb-publish-p1">我的卡劵</div>
             <div class="zb-publish-p2">您的抽奖码：577202</div>
