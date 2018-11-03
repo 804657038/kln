@@ -10,5 +10,11 @@ $(function () {
             $('.xia').html('↑')
         }
 
-    })
+    });
+     setInterval(function () {
+        $('#posterImg').css('opacity','0');
+    },1);
+
+
+
 })

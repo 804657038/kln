@@ -83,5 +83,32 @@ var app = new Vue({
         setTimeout(function () {
             $('#dgyz').show();
         },500);
+
+        $('.poster-ca').hide();
+        var demoHtml=document.body;
+        var canvas=document.createElement('canvas');
+        var scale=10;  //放大的倍数
+        var frame_width=$('body').width();
+        var frame_height=$('body').height();
+
+        canvas.width=frame_width*scale+10;
+        canvas.height=frame_height*scale+10;
+        canvas.getContext("2d").scale(scale,scale);
+        var opts={
+            tainttest:true,
+            scale:scale,
+            useCORS:true,
+            canvas:canvas,
+            logging:true,
+            width:frame_width+10,
+            height:frame_height+10
+        };
+
+        html2canvas(demoHtml,opts).then(function(canvas){
+            dataURL =canvas.toDataURL("image/png");
+            $('#posterImg').attr('src',dataURL);
+            $('.poster-ca').show();
+        })
+
     }
 })

@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mask.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>直播抽奖</title>
 </head>
 <body>
 <div id="app">
+
+
     <!--加载页-->
-     <div class="Load-wrap" v-if="staus == 0">
+     <div class="zb-wrap" v-if="staus == 1">
          <!--logo-->
          <div class="logo">
              <img src="images/logo_03.png" class="logo-img" alt="">
@@ -21,21 +25,524 @@
                  <img src="images/pic_03.png" class="mid-img" alt="">
              </div>
          </div>
-         <!--mid-->
-         <div class="mid-wrap-s">
-             <div class="mid-s">
-                 <img src="images/pic_07.png" class="mid-img-s" alt="">
-             </div>
+         <div class="furniture-wrap">
+         <!--家具-->
+         <div class="furniture">
+             <img src="images/pic_07.png" class="furniture-img" alt="">
+         </div>
          </div>
          <!--加载-->
-         <div class="load-wrap">
-             <div class="load">
-             <div class="load-dow"></div>
-             <div class="load-up"  onclick="imgLoader(percentage)"></div>
+         <div class="progress-wrap">
+         <div class="progress">
+             <div class="progressbar"></div>
+             <div class="progresstext">
+                 <span class="current"></span>
+                 <span class="totals">%</span>
+             </div>
          </div>
-             <div class="load-num">0<span>%</span> </div>
          </div>
+
      </div>
+    <!--首页1-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <!--logo-->
+        <div class="logo">
+            <img src="images/logo_03.png" class="logo-img" alt="">
+        </div>
+        <!--侧栏按钮-->
+        <div class="zb-sidebar">
+            <div class="zb-sidebar-btn" @click="sm_show=!sm_show">
+                活动说明
+            </div>
+            <div class="zb-sidebar-btn">
+               中奖名单
+            </div>
+        </div>
+        <!--mid-->
+        <div class="mid-wrap mid-wrap1">
+            <div class="mid">
+                <img src="images/pic_04.png" class="mid-img" alt="">
+            </div>
+        </div>
+        <!--购亲友权益卡尊享两重特惠-->
+        <div class="zb-wz">
+            <div class="zb-wz-p">购亲友权益卡尊享两重特惠</div>
+        </div>
+        <!--重礼-->
+        <div class="zb-ritual-wrap">
+            <div class="zb-ritual">
+                <img src="images/ritual1.png" class="zb-ritual-w" alt="">
+                <img src="images/ritual2.png" class="zb-ritual-w" alt="">
+            </div>
+        </div>
+        <!--点击购买-->
+        <div class="purchase">
+            <div class="purchase-btn">点击购买</div>
+        </div>
+
+
+    </div>
+    <!--首页2-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <!--logo-->
+        <div class="logo">
+            <img src="images/logo_03.png" class="logo-img" alt="">
+        </div>
+        <!--侧栏按钮-->
+        <div class="zb-sidebar">
+            <div class="zb-sidebar-btn" @click="sm_show=!sm_show">
+                活动说明
+            </div>
+            <div class="zb-sidebar-btn">
+                中奖名单
+            </div>
+        </div>
+        <!--mid-->
+        <div class="mid-wrap mid-wrap1">
+            <div class="mid">
+                <img src="images/pic_04.png" class="mid-img" alt="">
+            </div>
+        </div>
+        <!--购亲友权益卡尊享两重特惠-->
+        <div class="zb-wz">
+            <div class="zb-wz-p">购亲友权益卡尊享两重特惠</div>
+        </div>
+        <!--重礼-->
+        <div class="zb-ritual-wrap">
+            <div class="zb-ritual">
+                <img src="images/ritual1.png" class="zb-ritual-w" alt="">
+                <img src="images/ritual2.png" class="zb-ritual-w" alt="">
+            </div>
+        </div>
+        <!--点击购买-->
+        <div class="purchase">
+            <div class="purchase-btn">我的卡劵</div>
+        </div>
+
+
+    </div>
+    <!--中奖名单待公布-->
+    <div class="zb-wrap" v-if="staus == 1">
+          <div class="zb-publish">
+              <div class="zb-publish-p1">中奖名单待公布</div>
+              <div class="zb-publish-p2">您的抽奖码：577202</div>
+          </div>
+        <div class="zb-code">
+            <img src="images/code.png" class="zb-code-img" alt="">
+        </div>
+        <div class="zb-long-wrap">
+         <div class="zb-long">长按二维码识别</div>
+         <div class="zb-long">了解抽奖规则</div>
+        </div>
+        <div class="publish-btn-wrap-s">
+        <div class="publish-btn-wrap">
+            <div class="publish-btn">返回</div>
+            <div class="publish-btn" @click="fx_show=!fx_show">分享好友</div>
+        </div>
+        </div>
+
+    </div>
+    <!--分享页-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <div class="zb-winning-fw">
+            < 返回
+        </div>
+        <div class="zb-winning">中奖名单</div>
+        <!--mid-->
+        <div class="mid-wrap mid-wrap2">
+            <div class="zb-winning-mid">
+                <img src="images/pic_04.png" class="zb-winning-mid-img" alt="">
+            </div>
+        </div>
+        <!--二维码-->
+        <div class="zb-winning-codes">
+            <img src="images/code.png" class="zb-winning-codes-img" alt="">
+        </div>
+        <!--还没生成名单-->
+        <div class="winning-single">
+            还没生成名单
+        </div>
+        <!--还没生成名单-->
+        <div class="winning-prize">
+           <div class="winning-prize-p1">开奖时间：2018-9-？</div>
+            <div class="winning-prize-p1">关注公众号留意开奖直播</div>
+        </div>
+
+        <!--点击购买-->
+        <div class="purchase">
+            <div class="purchase-btn" @click="fx_show=!fx_show">分享好友</div>
+        </div>
+
+
+    </div>
+    <!--中奖名单-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <div class="zb-winning-fw zb-winning-fw-current">
+            < 返回
+        </div>
+        <div style="margin-top: 0.5rem"></div>
+        <!--mid-->
+        <div class="mid-wrap mid-wrap2">
+            <div class="zb-winning-mid">
+                <img src="images/pic_04.png" class="zb-winning-mid-img" alt="">
+            </div>
+        </div>
+       <!--获奖-->
+        <div class="award">
+            中奖名单
+        </div>
+        <!--tab-->
+        <div class="tab-wrap">
+        <ul class="tabs-list">
+            <li class="tabs-item tabs-item-current">一 等 奖</li>
+            <li class="tabs-item">二 等 奖</li>
+            <li class="tabs-item">三 等 奖</li>
+        </ul>
+        <ol class="tab-list">
+            <li class="tab-item">
+                <div class="column-wrap">
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-box">
+                        <div class="column-logo">
+                            <img src="images/code.png" class="column-logo-img" alt="">
+                        </div>
+                        <div class="column-content">
+                            <div class="p1">{{prize}}</div>
+                            <div class="p2">{{contents}}</div>
+                            <div class="information">
+                                <span class="information-name">{{username}}</span>
+                                <span class="information-adds">{{useradds}}</span>
+                                <span class="information-phone">{{userphone}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tab-item tab-item-none">2</li>
+            <li class="tab-item tab-item-none">3</li>
+        </ol>
+        </div>
+
+
+    </div>
+    <!--填写信息-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <div class="zb-winning-fw zb-winning-fw-current">
+            < 返回
+        </div>
+        <form action="#" method="get" class="zb-fill-form">
+          <div class="zb-fill">填写个人信息</div>
+            <div class="zb-fill-wrap">
+                <div class="zb-fill-box">
+                    <div class="zb-fill--position">姓名：</div>
+                    <input type="text" class="zb-fill-input"  >
+                </div>
+                <div class="zb-fill-box">
+                    <div class="zb-fill--position">电话：</div>
+                    <input type="number" class="zb-fill-input" >
+                </div>
+                <div class="zb-fill-box">
+                    <select name="#" id="#" class="zb-fill-select">
+                        <option value="江西省">江西省</option>
+                    </select>
+                    <select name="#" id="#" class="zb-fill-select">
+                        <option value="江西省">江西省</option>
+                    </select>
+                    <select name="#" id="#" class="zb-fill-select">
+                        <option value="江西省">江西省</option>
+                    </select>
+                </div>
+                <div class="zb-fill-box">
+                    <div class="zb-fill--position">店名：</div>
+                    <input type="text" class="zb-fill-input" >
+                </div>
+                <div class="zb-fill-box zb-fill-box-current">
+                    <div class="zb-fill--position">是否已订购产品：</div>
+                    <div class="button-holders">
+                        <input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" checked>
+                        <label for="radio-2-1" class="label-m"></label>
+                        <div class="yes-s">是</div>
+                        <input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio">
+                        <label for="radio-2-2" class="label-m"></label>
+                        <div class="yes-s">否</div>
+                    </div>
+                </div>
+                <div class="zb-fill-box">
+                    <div class="zb-fill--position">订单金额：</div>
+                    <input type="number" class="zb-fill-input zb-fill-input-price" >
+                </div>
+            </div>
+            <div class="purchase"><div class="purchase-btn" @click="yz_show =!yz_show">确定</div></div>
+        </form>
+
+    </div>
+    <!--信息提交成功-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <div class="zb-publish">
+            <div class="zb-publish-p1">信息提交成功</div>
+            <div class="zb-publish-p2">您的抽奖码：577202</div>
+        </div>
+        <div class="zb-code">
+            <img src="images/code.png" class="zb-code-img" alt="">
+        </div>
+        <div class="zb-long-wrap">
+            <div class="zb-long">长按二维码识别</div>
+            <div class="zb-long">了解抽奖规则</div>
+        </div>
+        <div class="publish-btn-wrap-s">
+            <div class="publish-btn-wrap publish-btn-wrap-c">
+                <div class="publish-btn">返回</div>
+            </div>
+        </div>
+
+    </div>
+    <!--/*再次购买-我的卡劵*/-->
+    <div class="zb-wrap" v-if="staus == 1">
+        <div class="zb-winning-fw zb-winning-fw-current">
+            < 返回
+        </div>
+
+        <div class="Translate-wrap">
+            <div class="Translate">
+                <div class="Translate-left">{{num_s}}</div>
+                <div class="Translate-box">
+                     <div class="Translate-box-w">您的抽奖码：</div>
+                    <div class="zb_codes">{{zb_code}}</div>
+                </div>
+                <div class="Translate-time-wrap">
+                    <div class="Translate-day">{{times_day}}</div>
+                    <div class="Translate-day">{{times_time}}</div>
+                    <div class="zb-look">
+                        查看详情
+                    </div>
+                </div>
+            </div>
+            <div class="Translate">
+                <div class="Translate-left">{{num_s}}</div>
+                <div class="Translate-box">
+                    <div class="Translate-box-w">您的抽奖码：</div>
+                    <div class="zb_codes">{{zb_code}}</div>
+                </div>
+                <div class="Translate-time-wrap">
+                    <div class="Translate-day">{{times_day}}</div>
+                    <div class="Translate-day">{{times_time}}</div>
+                    <div class="zb-look">
+                        查看详情
+                    </div>
+                </div>
+            </div>
+            <div class="Translate">
+                <div class="Translate-left">{{num_s}}</div>
+                <div class="Translate-box">
+                    <div class="Translate-box-w">您的抽奖码：</div>
+                    <div class="zb_codes">{{zb_code}}</div>
+                </div>
+                <div class="Translate-time-wrap">
+                    <div class="Translate-day">{{times_day}}</div>
+                    <div class="Translate-day">{{times_time}}</div>
+                    <div class="zb-look">
+                        查看详情
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--点击购买-->
+        <div class="purchase">
+            <div class="purchase-btn" >再次购买</div>
+        </div>
+
+
+    </div>
+    <!--扫码-我的卡劵-->
+    <div class="zb-wrap" v-if="staus == 0">
+        <div class="zb-publish">
+            <div class="zb-publish-p1">我的卡劵</div>
+            <div class="zb-publish-p2">您的抽奖码：577202</div>
+        </div>
+        <div class="zb-code">
+            <img src="images/code.png" class="zb-code-img" alt="">
+        </div>
+        <div class="zb-long-wrap">
+            <div class="zb-long">长按二维码识别</div>
+            <div class="zb-long">了解抽奖规则</div>
+        </div>
+        <div class="publish-btn-wrap-s">
+            <div class="publish-btn-wrap">
+                <div class="publish-btn">返回</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--活动说明-->
+    <div class="zb-explain-none" v-if="sm_show" >
+        <div class="zb-explain-wrap" v-if="staus == 0">
+            <div class="zb-explain">
+                <div class="zb-explain-header">
+                    <span class="zb-explain-header-p">活动说明</span>
+                </div>
+                <div class="zb-explain-con">
+                    <div class="p1">活动期间，微信支付100元可参与诗尼曼</div>
+                    <div class="p1">“ 买衣柜送橱柜”全国直播抽奖活动，</div>
+                    <div class="p1">特惠内容如下：</div>
+                    <div class="p1">① 定金倍增优惠</div>
+                    <div class="p1">② 凭卡即可参加诗尼曼工厂总部，“ 买</div>
+                    <div class="p1">衣柜送橱柜”全国直播抽奖（100%中奖）活动。</div>
+                    <div class="p1 p2">等奖： 小米55寸4K超清智能电视</div>
+                    <div class="p1 p2">三等奖：阳江十八子组合双刀</div>
+                    <div class="p1 p2">三等奖：阳江十八子组合双刀</div>
+                </div>
+                <div class="zb-explain-btn" @click="sm_show=!sm_show">我知道了</div>
+            </div>
+
+        </div>
+    </div>
+    <!--分享-->
+    <div class="mask-fx-none" v-if="fx_show">
+        <div class="mask-fx" @click="fx_show=!fx_show">
+            <div class="mask-fx-logo">
+                <img src="images/fx.png" class="mask-fx-logo-img" alt="">
+            </div>
+            <div class="mask-fx-wz">分享给好友，一起抽取大奖吧！</div>
+        </div>
+    </div>
+    <!--提交失败-->
+    <div class="yz-mask" v-if="yz_show">
+        <div class="yz-mask-box">
+            <div class="yz-icon"><img src="images/th.png" class="yz-icon-img" alt=""></div>
+            <div class="yz-wz">提交失败</div>
+            <div class="yz-sj">{{Tips}}</div>
+            <div class="zb-Sure" @click="yz_show = !yz_show">确定</div>
+        </div>
+    </div>
+
+
+<!--food-->
 </div>
 </body>
 </html>
@@ -45,4 +552,4 @@
 <script src="js/rem.js"></script>
 <script src="js/function.js"></script>
 <script src="js/index.js"></script>
-<script src="js/load.js"></script>
+<script src="js/resLoader.js"></script>

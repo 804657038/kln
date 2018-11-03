@@ -13,14 +13,18 @@
     <script type="text/javascript" src="js/gevas.js"></script>
 </head>
 <body>
+
 <div id="app">
+    <img src="images/ssd.png" id="posterImg" v-if="status == 0"  alt="">
     <!--导购员首页-->
     <div id="dgsy" v-if="status == 0">
+        <div class="logo" style="left: 8%;top: 4%;width: 26%"><img src="images/logo01.png" alt=""></div>
         <div class="logo02 centerX">
             <img src="images/logo02.png" alt="">
         </div>
         <div class="codeWrap centerX">
             <img src="images/img04.png" alt="">
+            <div style="position: absolute;bottom:0.2rem;font-size: 0.2rem;width: 100%;text-align: center;">小毛巾</div>
             <div class="code center">
                 <img src="images/erwei01.png" alt="">
             </div>
@@ -29,6 +33,7 @@
         <div class="bottom">
             <img src="images/bg01_1.png" alt="">
         </div>
+        <div class="poster-ca"></div>
     </div>
     <!--导购员验证-->
     <div id="dgyz" v-if="status == 1">
@@ -36,11 +41,21 @@
             <img src="images/logo01.png" alt="">
         </div>
         <div class="title01">
-            <img src="images/img01.png" alt="">
+            <img src="images/logo02.png" alt="">
         </div>
 
-        <div class="input01 centerX" v-show="step == 0">
-            <div class="i1-label">手机验证</div>
+
+        <div class="input01 centerX"  v-show="step == 0">
+            <div class="i1-label">姓名</div>
+            <div class="i1-input">
+                <img src="images/img02.png" alt="">
+                <div class="inputWrap">
+                    <input type="text" placeholder="请输入姓名" >
+                </div>
+            </div>
+        </div>
+        <div class="input01 centerX" style="top:32%" v-show="step == 0">
+            <div class="i1-label">手机</div>
             <div class="i1-input">
                 <img src="images/img02.png" alt="">
                 <div class="inputWrap">
@@ -48,10 +63,38 @@
                 </div>
             </div>
         </div>
+        <div class="input01 centerX" style="top:39%" v-show="step == 0">
+            <div class="i1-label">省市区</div>
+            <div class="i1-input">
+                <img src="images/img02.png" alt="">
+                <div class="inputWrap">
+                    <input type="text" id="picker" placeholder="请输入地址" >
+                </div>
+            </div>
+        </div>
+        <div class="input01 centerX" style="top:46%" v-show="step == 0">
+            <div class="i1-label">门店</div>
+            <div class="i1-input">
+                <img src="images/img02.png" alt="">
+                <div class="inputWrap">
+                    <input type="text" placeholder="请输入门店" >
+                </div>
+            </div>
+        </div>
+        <div class="input01 centerX" style="top:53%" v-show="step == 0">
+            <div class="i1-label">城市代码</div>
+            <div class="i1-input">
+                <img src="images/img02.png" alt="">
+                <div class="inputWrap">
+                    <input type="number" placeholder="请输入经销商代码" >
+                </div>
+            </div>
+        </div>
+
         <div class="btn01 centerX" v-show="step == 0">
             <img src="images/btn01.png" alt="">
             <div class="textWrap" @click="submit">
-                <span>发送验证码</span>
+                <span>立即注册</span>
             </div>
         </div>
 
@@ -102,10 +145,11 @@
 </html>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/html2canvas.min.js"></script>
 <script src="js/vue.js"></script>
 <script src="js/function.js"></script>
-<!--<script src="js/picker.min.js"></script>-->
-<!--<script src="js/city.js"></script>-->
+<script src="js/picker.min.js"></script>
+<script src="js/city.js"></script>
 <!--<script src="js/djs.js"></script>-->
-<!--<script src="js/index.js"></script>-->
-<!--<script type="text/javascript" src="js/adds.js"></script>-->
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/adds.js"></script>

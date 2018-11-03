@@ -16,7 +16,7 @@ body,html{
     width: 1.75rem;
     height: 0.5rem;
     position: absolute;
-    left: 0.5rem;
+    right: 0.5rem;
     top: 0.6rem;
 }
 .logo .logo-img{
@@ -37,7 +37,7 @@ body,html{
     display: flex;
     justify-content: center;
     position:  absolute;
-    bottom: 2.2rem;
+    bottom: 2.4rem;
 }
 .food .Advertisement-wrap .Advertisement{
     width: 80%;
@@ -174,6 +174,45 @@ body,html{
 .please-fill-wrap .please-input-wrap{
     width: 100%;
 }
+.please-input-s{
+    padding: 0 0.1rem;
+    height: 0.9rem;
+    -webkit-display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display:  flex;
+    justify-content: space-between;
+    align-items:  center;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+.please-input-s .please-input-s-left{
+    width: 50%;
+    height: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    -moz-box-shadow:2px 2px 5px #666;
+    -webkit-box-shadow:2px 2px 5px #666;
+    box-shadow:2px 2px 5px #666;
+    margin-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    background: white;
+
+}
+.please-input-s .please-input-s-right{
+    width: 35%;
+    height: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    -moz-box-shadow:2px 2px 5px #666;
+    -webkit-box-shadow:2px 2px 5px #666;
+    box-shadow:2px 2px 5px #666;
+    margin-bottom: 0.2rem;
+    background: white;
+}
+.please-input-s-left::placeholder{
+    color: #bbbbbb;
+}
 .please-fill-wrap .please-input-wrap .please-input{
     width: 90%;
     height: 0.9rem;
@@ -182,7 +221,7 @@ body,html{
     -moz-box-shadow:2px 2px 5px #666;
     -webkit-box-shadow:2px 2px 5px #666;
     box-shadow:2px 2px 5px #666;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
     padding-left: 0.5rem;
 }
 .please-fill-wrap .please-input-wrap .please-input.please-inputs{
@@ -209,6 +248,7 @@ body,html{
     width: 0.16rem;
     height: 100%;
     display:flex;
+    -webkit-display:flex;
     align-items:  center;
 }
 .roww .roww-img{
@@ -230,6 +270,7 @@ body,html{
     color: #fff;
     font-size: 0.3rem;
     font-weight:  bold;
+    letter-spacing: 2px;
 }
 /*中奖*/
 .fw{
@@ -376,7 +417,7 @@ body,html{
 /*成为合伙人页面*/
 .fill-invitation-hh{
     position: absolute;
-    right: 0.5rem;
+    left: 0.5rem;
     top: 0.8rem;
     color: #fff;
     font-size: 0.26rem;
@@ -393,7 +434,7 @@ body,html{
 }
 .fill-fafsa-img{
     width:4.8rem;
-    height: 0.6rem;
+    /* height: 0.6rem; */
 }
 .activity-btn-wrap{
     -webkit-display: flex;
@@ -451,26 +492,40 @@ body,html{
 }
 .poster-mid .poster-mid-img{
     width: 4.86rem;
-    height: 0.6rem;
 }
 .poster-main{
-    width: 2.9rem;
+    width: 3.7rem;
     margin: 0 auto;
-    padding-top: 1.4rem;
+    padding-top: 1rem;
 }
 .poster-sm{
-    width: 100%;
-    font-size:0.72rem;
-    color: #008cd6;
-    background-color: #fff;
-    font-family: serif;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color:pink;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.poster-sm .poster-sm-img{
+    width:100%;
+    border-radius: 50%;
 }
 .poster-Admission{
-    font-size: 0.72rem;
-    color: #fff;
+     font-size: 0.26rem;
+     color: #fff;
+     text-align:  center;
+     margin-top: 0.15rem;
+     font-family: sans-serif;
+     font-weight:  bold;
+     margin-bottom: 0.15rem;
+ }
+.poster-Admission.poster-Admission-current{
+    font-size: 0.42rem;
+    color: #289686;
 }
 .poster-home{
-     display: inline-block;
+    -webkit-display: table;
+     display: table;
+     margin:  0 auto;
  }
 .poster-home .poster-home-img{
     width: 2.91rem;
@@ -502,4 +557,80 @@ body,html{
     width: 100%;
     color: #fff;
     font-size: 0.22rem;
+}
+.please-select{
+    width: 97%;
+    height: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    -moz-box-shadow: 2px 2px 5px #666;
+    -webkit-box-shadow: 2px 2px 5px #666;
+    box-shadow: 2px 2px 5px #666;
+    margin-bottom: 0.2rem;
+    padding-left: 0.5rem;
+}
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.fill-gz-wrap{
+    padding-top: 0.9rem;
+}
+.fill-gz{
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fill-gz .fill-gz-img{
+    width: 5.74rem;
+}
+.ol-customs{
+    list-style-type:none;
+    counter-reset:sectioncounter;
+    padding-bottom: 0.4rem;
+    height:  auto;
+    width: 80%;
+    margin:  0 auto;
+    padding-top: 0.4rem;
+}
+.ol-customs .li-customs{
+    color: #fff;
+    font-size: 0.26rem;
+    line-height: 0.56rem;
+    height: auto;
+}
+.ol-customs .li-customs:before{
+    content:counter(sectioncounter) "、";
+    counter-increment:sectioncounter;
+}
+#posterImg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    z-index: 9999;
+    color: #fff;
+    letter-spacing: 0.1rem;
+
 }

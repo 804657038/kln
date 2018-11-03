@@ -31,8 +31,19 @@
     height: 20px;
     position: absolute;
     right: 0.3rem;
-    top: 1.9rem;
-    z-index: 1;
+    top: 0.6rem;
+    z-index: 99999;
+    background:url(../images/×.png)no-repeat;
+    background-size: 100% 100%;
+}
+.mask-xx-x{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0.3rem;
+    top: 1.8rem;
+    z-index: 99999;
+
 }
 .btn-wrap{
     width: 100%;
@@ -92,15 +103,19 @@
     -webkit-display: flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
+    overflow:  auto;
+    padding-top: 1.2rem;
+    /* padding-bottom:  50px; */
 }
 .mask-hd{
-    width: 75%;
-    height: 6rem;
-    background: url("../images/window-hd_03.png")no-repeat;
-    background-size: 100%;
-    padding: 3.2rem 0.5rem 0;
+    width: 77%;
+    height: auto;
+    background: url("../images/Winning_03.png")no-repeat center;
+    background-size: 100% 100%;
+    padding: 2rem 0.5rem 0;
     position:  relative;
     margin-top: -1.2rem;
+    /* overflow:  auto; */
 }
 .mask-gz{
     display: flex;
@@ -119,7 +134,6 @@
 .ol-custom{
     list-style-type:none;
     counter-reset:sectioncounter;
-    padding-bottom: 0.4rem;
     height:  auto;
 }
 .ol-custom .li-custom{
@@ -141,4 +155,21 @@
     -webkit-align-items: center;
     margin-bottom: 0.3rem;
     margin-top: 0.3rem;
+}
+.mask-xxs{
+    position: absolute;
+    top: -1.4rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    /* z-index: -1; */
+}
+.mask-xxsimg{
+    width: 1.72rem;
+    height: 2.8rem;
 }

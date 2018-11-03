@@ -1,14 +1,23 @@
 @charset "UTF-8";
 img {
   width: 100%; }
-
+#posterImg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: block;
+}
 .centerX {
   left: 50%;
   -webkit-transform: translate3d(-50%, 0, 0);
   -moz-transform: translate3d(-50%, 0, 0);
   -ms-transform: translate3d(-50%, 0, 0);
   -o-transform: translate3d(-50%, 0, 0);
-  transform: translate3d(-50%, 0, 0); }
+  transform: translate3d(-50%, 0, 0);
+  }
 
 .centerY {
   top: 50%;
@@ -54,27 +63,30 @@ img {
   background-size: 100% auto;
   display: none; }
   #dgyz > div {
-    position: absolute; }
+    position: absolute;
+    }
   #dgyz .logo {
     width: 26%;
     top: 4%;
     left: 8%; }
   #dgyz .title01 {
     width: 45%;
-    top: 20%;
+    top: 15%;
     left: 50%;
     -webkit-transform: translate3d(-50%, 0, 0);
     -moz-transform: translate3d(-50%, 0, 0);
     -ms-transform: translate3d(-50%, 0, 0);
     -o-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0); }
+    transform: translate3d(-50%, 0, 0);
+    }
   #dgyz .input01 {
     width: 80%;
-    top: 30%;
+    top: 25%;
     display: -webkit-flex;
     align-items: center;
     display: -webkit-flex;
-    -webkit-align-items: center; }
+    -webkit-align-items: center;
+    }
     #dgyz .input01 #shuru {
       width: 100%;
       height: 100%;
@@ -152,7 +164,8 @@ img {
         color: #333333; }
   #dgyz .btn01 {
     width: 30%;
-    top: 42%; }
+    top: 60%;
+    }
     #dgyz .btn01 .textWrap {
       display: flex;
       align-items: center;
@@ -183,21 +196,26 @@ img {
     position: absolute; }
   #dgsy .logo02 {
     width: 70%;
-    top: 8%; }
+    top: 13%;
+    }
   #dgsy .codeWrap {
-    width: 35%;
-    top: 28%;
+    width: 46%;
+    top: 27%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    /* box-sizing: border-box; */
+    }
     #dgsy .codeWrap .code {
-      width: 90%;
-      position: absolute; }
+      width: 83%;
+      position: absolute;
+      margin-top: -0.2rem;
+      }
   #dgsy .codeText {
-    top: 54%;
-    font-size: 0.28rem;
+    top: 59%;
+    font-size: 0.3rem;
     color: #ffffff;
-    font-weight: bold; }
+    font-weight: bold;
+    }
   #dgsy .bottom {
     width: 100%;
     bottom: 0; }
