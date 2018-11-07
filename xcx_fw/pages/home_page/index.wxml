@@ -1,0 +1,34 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>我的</view>
+      <view class='icon-right'></view>
+</view>
+<!-- mian  -->
+<view class='main'>
+   <view class='card'>
+   <view class='contents'>
+      <view class='contents-list'>
+          <view class='contents-list-left'><view class='iconfont icon-GSB'></view></view>
+            <view class='contents-list-right'>{{enterprise}}</view>
+      </view>
+         <view class='contents-list'>
+          <view class='contents-list-left'><view class='iconfont icon-lingdai'></view></view>
+            <view class='contents-list-right contents-list-right-s'>{{distribution}}</view>
+      </view>
+           <view class='contents-list'>
+          <view class='contents-list-left contents-list-left-s'>{{name}}</view>
+            <view class='contents-list-right'>{{phone}}</view>
+      </view>
+   </view>
+   <view class='upload' >
+       <image bindtap="choose" class='upload-img' src="{{avatar}}"></image>
+   </view>
+   </view>
+   <!--设置  -->
+   <view class='Set-wrap'>
+       <view>设置</view>
+       <view class='iconfont icon-youjian icon-youjian-x'></view>
+   </view>
+   
+</view>
+      

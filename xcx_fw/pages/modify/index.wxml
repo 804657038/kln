@@ -1,0 +1,13 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>修改名片</view>
+      <view class='icon-right'>保存</view>
+</view>
+   <!--修改名片  -->
+<view class='mian'>
+   <view class='Set-wrap'>
+       <view>称呼</view>
+       <view>{{name}}</view>
+   </view>
+   <view class='plase_name'>请留下你的真实姓名</view>
+</view>

@@ -1,0 +1,40 @@
+  <view class='nav-wrap'>
+      <view class='iconfont  icon-left'></view>
+      <view class='nav-mid'>工作</view>
+      <view class='icon-right'></view>
+</view>
+<!--main  -->
+<view class='main'>
+<!--分隔层  -->
+   <view class='header'>
+     <view class='header-left'>审批</view>
+     <view class='header-right'>我的审批</view>
+   </view>
+   <!--list  -->
+   <view class='list-auto-wrap'>
+   <view class='list-auto'>
+       <view class='list-ctn' wx:for-items="{{arrtry}}">
+       <view class='list-ctn-wrap'>
+            <image class='list-ctn-img'  src='{{item.pic}}'></image>
+         </view>
+          <view class='list-text'>{{item.text}}</view>
+       </view>
+   </view>
+   </view>
+   <!--分隔层  -->
+      <view class='header'>
+     <view class='header-left'>工作汇报</view>
+     <view class='header-right'>记录</view>
+   </view>
+   <!--list  -->
+   <view class='con-list-wrap'>
+     <view class='con-list' wx:for="{{contents}}">
+        <view class='con-list-ne'>{{item.text1}}</view>
+        <view class='con-list-text'>{{item.text2}}</view>
+     </view>
+   </view>
+   <!--加号  -->
+   <view class='jia'>
+      <view class='iconfont icon-jia' bindtap='sss'></view>
+   </view>
+</view>

@@ -1,0 +1,21 @@
+{
+  "pages":[
+   
+      "pages/leave/index",
+      "pages/release/index",
+      "pages/work/index",
+      "pages/account/index",
+      "pages/login/index",
+      "pages/set_up/index",
+      "pages/modify/index",
+      "pages/index/index",
+      "pages/home_page/index"
+     
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  }
+}

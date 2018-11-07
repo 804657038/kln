@@ -1,0 +1,24 @@
+.suspension{
+  position: absolute;
+  right: 50rpx;
+  bottom:110rpx;
+}
+.suspension_list{
+  display: flex;
+  -webkit-display: flex;
+  margin-top: 40rpx;
+}
+.suspension_left{
+  font-size: 22rpx;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+   margin-right: 40rpx;
+}
+.suspension_img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}

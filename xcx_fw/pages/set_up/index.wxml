@@ -1,0 +1,17 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>设置</view>
+      <view class='icon-right'>保存</view>
+</view>
+   <!--修改名片  -->
+<view class='mian'>
+   <view class='Set-wrap'>
+       <view>账号</view>
+       <view>{{numbers}}</view>
+   </view>
+     <view class='Set-wrap'>
+       <view>我的企业</view>
+       <view>{{companys}}</view>
+   </view>
+
+</view>

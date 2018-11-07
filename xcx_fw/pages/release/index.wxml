@@ -1,0 +1,6 @@
+<view class="suspension">
+   <view class='suspension_list' wx:for-items="{{arrtry}}">
+      <view class='suspension_left'>{{item.notice}}</view>
+          <image class='suspension_img' src='{{item.pic}}'></image>
+   </view>
+</view>

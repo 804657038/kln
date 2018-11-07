@@ -1,0 +1,112 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 26rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+    z-index: 10000000;
+}
+.main{
+    background: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:55px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    -webkit-justify-content:space-between;
+    width:90%;
+    box-sizing: border-box;
+    padding: 40rpx;
+    background-color: #fff;
+    margin: 25rpx auto 40rpx;
+    -moz-box-shadow:0px 0px 18px #e2e2e2; -webkit-box-shadow:0px 0px 18px #e2e2e2; box-shadow:0px 0px 18px #e2e2e2;
+
+}
+.contents-list:nth-child(1){
+  margin-top: 0;
+}
+.contents-list{
+    display: flex;
+    align-items: center;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    margin-top: 40rpx;
+}
+.contents-list-left{
+   font-size: 26rpx;
+   color: #666666;
+   margin-right: 20rpx;
+}
+.contents-list-right{
+   font-size: 26rpx;
+   color: #666666;
+}
+.contents-list-right-s{
+  color: #999999;
+}
+.contents-list-left-s{
+  font-size:34rpx;
+  color: #333;
+  font-weight: bold;
+}
+.upload{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: relative;
+}
+.upload-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+.Set-wrap{
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+   display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    -webkit-justify-content:space-between;
+    margin-top: 40rpx;
+    padding: 0 30rpx;
+    font-size: 26rpx;
+    color: #333333;
+    box-sizing: border-box;
+}
+.icon-youjian-x{
+  color: #d0d0d0;
+}

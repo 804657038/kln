@@ -1,0 +1,17 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>鸿基资盈宝用户使用协议</view>
+      <view class='icon-right'></view>
+</view>
+<view class='Agreement-wrap'>
+<view class="header">{{mass}}</view>
+
+<view class='Agreement1'>{{text}}</view>
+
+<view class='Agreement2'>{{contents}}</view>
+
+<view class='list'>{{list}}</view>
+
+<view class='Agreement3'>{{jw}}</view>
+
+</view>

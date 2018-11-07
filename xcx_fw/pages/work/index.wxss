@@ -1,0 +1,141 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 26rpx;
+
+}
+.nav-wrap{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:space-between;
+  padding: 25rpx 30rpx;
+  width: 100%;
+  background-color: #fff;
+  box-sizing:border-box;
+  height: 100rpx;
+  position: fixed;
+  top:0;
+  z-index: 10000000;
+}
+.main{
+  background: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:55px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:space-between;
+  padding: 0 40rpx;
+  height: 80rpx;
+}
+.header-left{
+  font-size: 26rpx;
+  color: #666666;
+}
+.header-right{
+  font-size: 26rpx;
+  color: #333;
+}
+.list-auto-wrap{
+  width: 100%;
+  overflow: auto;
+}
+.list-auto{
+  width:1000rpx;
+  display: flex;
+  justify-content: left;
+  background-color: #fff;
+  padding: 40rpx;
+}
+.list-ctn{
+  margin:auto  23rpx ; 
+}
+.list-ctn-wrap{
+   width: 120rpx;
+   height: 120rpx;
+   border: 1px solid #dcdcdc;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content:center;
+   border-radius: 5px;
+ 
+}
+.list-ctn-img{
+   width: 50rpx;
+   height:50rpx;
+}
+.list-text{
+  text-align: center;
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 30rpx;
+}
+.con-list-wrap{
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content:center;
+   padding: 40rpx;
+   background-color: #fff;
+}
+.con-list{
+  margin: auto 90rpx;
+}
+.con-list-ne{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #1b9e99;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+  font-size: 24rpx;
+  color: #fff;
+}
+.con-list-text{
+  text-align: center;
+  font-size: 24rpx;
+  margin-top: 25rpx;
+}
+.jia{
+  width:80rpx;
+  height: 80rpx;
+  background-color:#00a6a0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+  font-size: 100rpx;
+  color: #fff;
+  position: absolute;
+  right: 55rpx;
+  bottom:65px;
+}

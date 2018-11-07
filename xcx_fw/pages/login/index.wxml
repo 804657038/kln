@@ -1,0 +1,33 @@
+
+<view class='container_wrap'>
+    <view class='header'>{{come}}</view>
+   <view class='input_wrap'>
+        <input type='text' placeholder-class="place-holder" bindtap="input"  bindinput='getPhoneValue' class='input_cont' placeholder='手机号' value="{{phone}}" />
+        <view class='changeInfoName'>
+        <input type='text' placeholder-class="place-holder" bindinput='getCodeValue' class='input_cont' placeholder='验证码' value="{{code}}" />
+        <view class='codeBtn-wrap'>
+        <button class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}' >{{codename}}</button>
+        </view>
+        </view>
+
+      <button class='changeBtn' bindtap='save'>登陆</button>
+   </view>
+   <!--或者  -->
+   <view class='perhaps_wrap'> 
+     <view class='perhaps'>
+       </view>
+   </view>
+
+   <!--选择  -->
+   <view class='select-list' wx:for-item="item">
+      <view class="section__ctn"  wx:for-items="{{array}}" >
+        <image class='select-list-img'  mode="{{item.mode}}" src="{{src1}}"></image>
+      </view>
+   </view>
+  <!--选择协议  -->
+  <view class='agree'>
+      <label><checkbox class='sz' value="checkbox1"/></label><view class='wz'>我同意《鸿基资盈宝职员使用协议》</view>
+  </view>
+
+
+</view>

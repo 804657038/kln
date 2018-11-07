@@ -1,0 +1,63 @@
+
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 26rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+    z-index: 10000000;
+}
+.header{
+  text-align:center;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+  font-size: 26rpx;
+  color:#666666;
+}
+.Agreement-wrap{
+  position: fixed;
+  top: 55px;
+  padding:10rpx 30rpx;
+  background-color: #f6f6f6;
+}
+.Agreement1{
+  text-indent: 40rpx;
+  font-size: 26rpx;
+  color:#666666;
+}
+.Agreement2{
+  font-size: 26rpx;
+  color:#666666;
+  margin-top: 50rpx;
+}
+.list{
+  font-size: 26rpx;
+  color:#666666;
+  margin: 50rpx auto;
+}
+.Agreement3{
+  font-size: 26rpx;
+  color:#666666;
+}
