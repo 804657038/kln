@@ -1,0 +1,116 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 26rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+    z-index: 10000000;
+}
+.main{
+    background: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:55px;
+}
+.header-personal{
+  height: 150rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+   display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  padding:0 30rpx;
+}
+.header-personal-left{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: pink;
+}
+.header-personal-left-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.header-personal-right{
+   display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  margin-left: 20rpx;
+}
+.header-personal-right-name{
+  font-size: 30rpx;
+  color: #333;
+}
+.header-personal-right-icon{
+  font-size:35rpx;
+  color: #f88d8d;
+  margin-left: 10rpx;
+}
+.list-personal-wrap{
+  margin-top: 20rpx;
+}
+.list-personal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  padding: 0 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f6f6f6;
+  height: 100rpx;
+  color: #666666;
+  font-size: 26rpx;
+}
+.colour{
+  color: #00a6a0;
+}
+.personal-btn{
+  width:90%;
+  height: 80rpx;
+  background-color: #00a6a0;
+  margin: 30rpx;
+  color: #fff;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+.Invitation{
+  font-size: 22rpx;
+  position: fixed;
+  bottom: 60rpx;
+  text-align: center;
+  width: 100%;
+  color: #666;
+}

@@ -1,0 +1,70 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>新建公告</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+
+  <!--分隔层  -->
+   <view class="section section-fg">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="输入公告内容..." />
+   </view>
+
+
+  <!--上传文件  -->
+  <view class='upload_wrap'>
+     <view class='f_j'>说明附件</view>
+     <view class='imgarr-wrap'>
+         <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+           <view class="closeImv"  mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}">
+                   <view class='iconfont icon-cuo icon-cuo-x'></view>
+           </view>
+        </view>
+    </block>
+     <view class='upload_ne' bindtap="chooseImage">
+         <view class='iconfont icon-fujian'></view>
+     </view>
+     </view>
+  </view>
+
+
+<view class='main-section'>
+<!--设置时间  -->
+<view class="section">
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker picker_custom">
+ <view class="iconfont icon-youjian icon-youjian-x"></view>
+     <view>设置时间</view> {{time}}
+    </view>
+  </picker>
+</view>
+</view>
+<!--接受人  -->
+<view class='main-section'>
+<view class="section">
+
+    <view class="picker picker_custom">
+ <view class="iconfont icon-youjian icon-youjian-x"></view>
+     <view>接受人</view> 
+    </view>
+
+</view>
+</view>
+<!--抄送人  -->
+<view class='main-section'>
+<view class="section">
+
+    <view class="picker picker_custom">
+ <view class="iconfont icon-youjian icon-youjian-x"></view>
+     <view>抄送人</view> 
+    </view>
+
+</view>
+</view>
+
+    <button class='btn'>提交</button>
+
+ </view>

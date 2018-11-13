@@ -1,0 +1,111 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>报销</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+  <view class='section-wrap'>
+ <!--请假  -->
+    <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker picker_custom">
+    <view class='iconfont icon-youjian icon-youjian-x'></view>
+     <view>报销类型</view>{{array[index]}}
+    </view>
+  </picker>
+</view>
+</view>
+  <view class='section-wrap'>
+ <!--请假  -->
+    <view class="section">
+    <view class="picker picker_custom border_none">
+     <view>报销项目</view>
+     <input class='bx_s' type='text' placeholder='请填写' placeholder-class='placeholder_glay' />
+    </view>
+</view>
+</view>
+<!--自动校准打卡记录  -->
+<view class='z_d'>报销明细</view>
+
+
+ <view class='section-wrap'>
+<!--费用类型  -->
+    <view class="section">
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+    <view class="picker picker_custom">
+    <view class='iconfont icon-youjian icon-youjian-x'></view>
+     <view>费用类型</view>{{array1[index1]}}
+    </view>
+  </picker>
+</view>
+<!--时间  -->
+
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+  <view class="picker picker_custom">
+           <view class='iconfont icon-youjian icon-youjian-x'></view>
+       <view>费用时间</view>{{date}}
+    </view>
+  </picker>
+</view>
+
+<!--费用金额  -->
+<view class='picker_custom'>
+   <view class='length_time_left'>费用金额</view>
+      <view class='length_time_right'><input type='number' placeholder='0元' class='length_time_right_input' value="" /></view>
+</view>
+
+ <!--textarea  -->
+  <view class="page-section">
+    <view class="textarea-wrp">
+      <textarea class='textarea-ne' placeholder-class='textarea-ne-s' placeholder='费用说明' auto-focus="true"/>
+    </view>
+  </view>
+
+
+<!--新增费用  -->
+<view class='jias_wrap'>
+<view class='icon-wrap'>
+  <view class='iconfont icon-jia icon-jia-x'></view>
+</view>
+    <view>新增费用</view>
+</view>
+
+
+</view>
+
+
+  
+  <!--上传文件  -->
+  <view class='upload_wrap'>
+     <view class='f_j'>说明附件</view>
+     <view class='imgarr-wrap'>
+         <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+           <view class="closeImv"  mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}">
+                   <view class='iconfont icon-cuo icon-cuo-x'></view>
+           </view>
+        </view>
+    </block>
+     <view class='upload_ne' bindtap="chooseImage">
+         <view class='iconfont icon-fujian'></view>
+     </view>
+     </view>
+  </view>
+  <!--审批人  -->
+  <view class='upload_wrap_sp'>
+     <view class='f_j'>审批人</view>
+     <view class='sp_img_wrap_s'>
+       <view class='sp_img_wrap' wx:if='{{show==false}}'>
+         <view class='iconfont icon-cuo icon-cuo-x' bindtap='sc'></view>
+         <image class='sp_img_wrap_img' src="{{pic_ns}}"></image>
+       </view>
+         <view class='sp_img_wrap sp_img_wrap_bg'>
+         <view class='iconfont icon-jia icon-jia-x_f'></view>
+       </view>
+       </view>
+  </view>
+
+ </view>

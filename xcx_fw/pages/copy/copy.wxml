@@ -1,0 +1,39 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>抄送人</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+
+<view class='main-section'>
+<!--设置时间  -->
+<view class="section">
+    <view class="picker picker_custom">
+ <view class="iconfont icon-youjian icon-youjian-x"></view>
+     <view>添加接收人</view> 
+    </view>
+</view>
+</view>
+<!--接受人  -->
+<view class='main-section'>
+<view class="section">
+
+    <view class="picker picker_custom">
+ <view class="iconfont icon-youjian icon-youjian-x"></view>
+     <view>选择接收部门</view> 
+    </view>
+
+</view>
+</view>
+<!--抄送人  -->
+<view class='main-section'>
+<view class="section">
+    <view class="picker picker_custom">
+     <view>企业全体人员</view> 
+    </view>
+</view>
+</view>
+
+    <button class='btn'>确定</button>
+
+ </view>

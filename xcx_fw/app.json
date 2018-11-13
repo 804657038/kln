@@ -1,6 +1,22 @@
 {
   "pages":[
-   
+      "pages/Contacts/Contacts",
+      "pages/company/company",
+      "pages/personal_information/personal_information",
+      "pages/communication/communication",
+      "pages/copy/copy",
+      "pages/recipient/recipient",
+      "pages/announcement/announcement",
+      "pages/notice/notice",
+      "pages/overtime/overtime",  
+      "pages/monthly/monthly",
+      "pages/approvalt_submission/approvalt_submission",
+      "pages/record/record",
+      "pages/weekly/weekly",
+      "pages/index/index",
+      "pages/application_approval/application_approval",
+      "pages/egress/egress",
+      "pages/home_page/index",
       "pages/leave/index",
       "pages/release/index",
       "pages/work/index",
@@ -8,9 +24,13 @@
       "pages/login/index",
       "pages/set_up/index",
       "pages/modify/index",
-      "pages/index/index",
-      "pages/home_page/index"
-     
+      "pages/travel/travel",
+      "pages/purchase/purchase",
+      "pages/cost/cost",
+      "pages/application_leave/application_leave",
+      "pages/application_decision/application_decision",
+      "pages/daily/daily"
+      
   ],
   "window":{
     "backgroundTextStyle":"light",

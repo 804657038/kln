@@ -2,6 +2,8 @@ var dateTimePicker = require('../../utils/dateTimePicker.js');
 
 Page({
   data: {
+    imgArr: [],
+    chooseViewShow: true,
     array: ['事假', '病假', '年假', '调休假', '婚假'],
     objectArray: [
       {
@@ -25,6 +27,7 @@ Page({
         name: '婚假'
       }
     ],
+    show:false,
     date: '2018-10-01',
     time: '12:00',
     dateTimeArray: null,
@@ -65,7 +68,9 @@ Page({
     this.setData({ time: e.detail.value });
   },
   changeDateTime(e) {
+
     this.setData({ dateTime: e.detail.value });
+    
   },
   changeDateTime1(e) {
     this.setData({ dateTime1: e.detail.value });
@@ -92,42 +97,70 @@ Page({
       dateTime1: arr
     });
   },
-  upload: function () {
-    var that = this
+  /** 选择图片 */
+  chooseImage: function () {
+    var that = this;
     wx.chooseImage({
-      count: 1,
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
+      count: 9 - that.data.imgArr.length,//最多选择4张图片
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
       success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
-        wx.uploadFile({
-          url: '',
-          filePath: tempFilePaths[0],
-          name: 'file',
-          formData: {
-            'user': 'test'
-          },
-          success: function (res) {
-            var data = res.data
-            wx.showModal({
-              title: '上传文件返回状态',
-              content: '成功',
-              success: function (res) {
-                if (res.confirm) {
-                  console.log('用户点击确定')
-                }
-              }
-            })                          //do something
-          },
-          fail: function (res) {
-            console.log(res)
-          }
-        })
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        console.log(res.tempFilePaths);
+        if (res.tempFilePaths.count == 0) {
+          return;
+        }
+        //上传图片
+        var imgArrNow = that.data.imgArr;
+        imgArrNow = imgArrNow.concat(res.tempFilePaths);
         that.setData({
-          path: tempFilePaths
+          imgArr: imgArrNow
         })
+        that.chooseViewShow();
       }
+    })
+  },
+
+  /** 删除图片 */
+  deleteImv: function (e) {
+    var imgArr = this.data.imgArr;
+    var itemIndex = e.currentTarget.dataset.id;
+    imgArr.splice(itemIndex, 1);
+    this.setData({
+      imgArr: imgArr
+    })
+    //判断是否隐藏选择图片
+    this.chooseViewShow();
+  },
+
+
+  /** 是否隐藏图片选择 */
+  chooseViewShow: function () {
+    if (this.data.imgArr.length >= 9) {
+      this.setData({
+        chooseViewShow: false
+      })
+    } else {
+      this.setData({
+        chooseViewShow: true
+      })
+    }
+  },
+
+  /** 显示图片 */
+  showImage: function (e) {
+    var imgArr = this.data.imgArr;
+    var itemIndex = e.currentTarget.dataset.id;
+
+    wx.previewImage({
+      current: imgArr[itemIndex], // 当前显示图片的http链接
+      urls: imgArr // 需要预览的图片http链接列表
+    })
+  },
+  sc:function(){
+    var that = this;
+    that.setData({
+      show:true
     })
   }
  

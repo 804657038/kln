@@ -1,0 +1,64 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>我的审批</view>
+      <view class='iconfont icon-sousuo icon-right'></view>
+</view>
+
+<view class='main'>
+<view class='select-wrap'>
+<!--1  -->
+<view class="section select-inner">
+  <picker bindchange="bindPickerChange1" value="{{index}}" range="{{array1}}">
+    <view class="picker picker-custom">
+     {{array1[index1]}}<view class='iconfont icon-xia icon-xia-x'></view>
+    </view>
+  </picker>
+</view>
+<!--2  -->
+<view class="section select-inner">
+  <picker bindchange="bindPickerChange2" value="{{index}}" range="{{array2}}">
+    <view class="picker picker-custom">
+      {{array2[index2]}}<view class='iconfont icon-xia icon-xia-x'></view>
+    </view>
+  </picker>
+</view>
+<!--3  -->
+<view class="section select-inner">
+  <picker bindchange="bindPickerChange3" value="{{index}}" range="{{array3}}">
+    <view class="picker picker-custom">
+      {{array3[index3]}}<view class='iconfont icon-xia icon-xia-x'></view>
+    </view>
+  </picker>
+</view>
+</view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <!--1  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[0,1,2,3,4,5,6]}}"  wx:key="*this">
+                    <view class="item-ans">
+                       <view class='item-ans-left'>
+                           <view class='left-group1'>
+                             <image class='left-group1-leave-img' src='{{src}}'></image> 
+                             <view class='left-group1-names'>{{names}} - <view class='name_x'>{{state}}</view></view>
+                           </view>
+                            <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{types}}</view>
+                            </view>
+                               <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{starts}}</view>
+                            </view>
+                      
+                       </view>
+                       <view class='item-ans-right'>{{times}}</view>
+                    </view>
+                </block>
+                     <view style='height:50px;'></view>
+            </scroll-view>
+        </swiper-item>
+  
+             
+    </swiper>
+
+</view>

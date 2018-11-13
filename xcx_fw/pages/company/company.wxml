@@ -1,0 +1,43 @@
+<view class="header">
+  <view class='header-left'>新鸿基运广场物业管理有限公司</view>
+  <view class='header-right-wrap'>
+    <view class='iconfont icon-sousuo header-mid' bindtap='search'></view>
+      <view class='iconfont icon-menu-gerenshezhi header-right'></view>
+      </view>
+</view>
+<!--list  -->
+<view class='main' >
+<block wx:for-items="{{carInfoData}}" wx:for-item="item"  > 
+   <view class='stration-list' >
+    <view class='containers-Separate {{item.hiddens}}'>{{item.Separate}}</view>
+      <!--item  -->
+     <view class='containers'> 
+        <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}"  data-index="{{index}}" bindtouchstart="touchstart"
+        bindtouchmove="touchmove" wx:for="{{items}}"  wx:key="">
+    <view class="content">
+       <image class='content-img' src='{{item.pic1}}'></image>
+       <view class='content-img-inner'>{{item.content}}</view>
+    </view>
+    <view class="del" catchtap="del" data-index="{{index}}">分配至</view>
+            <view class="exhibition {{item.Hiddens ? 'Show' : ''}}">
+            <view class='exhibition-item'>{{item.department}}</view>
+              <view class='exhibition-item'>{{item.departments}}</view>
+         </view>
+        </view>
+   
+      </view> 
+
+   </view> 
+</block>
+<!--搜索  -->
+<view class='suosuo-wrap' wx:if="{{suosuo==true}}">
+   <view class='suosuo'>
+       <view class='iconfont icon-fanhui iconfont-x' bindtap='returns'></view>
+       <view class="section">
+          <input placeholder="搜索" auto-focus/>
+        </view>
+   </view>
+</view>
+
+<view style='height:200rpx;'></view>
+</view>

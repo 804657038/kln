@@ -1,0 +1,111 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>采购</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+  
+  <view class='section-wrap'>
+ <!--申请项目  -->
+    <view class="section">
+    <view class="picker picker_custom border_none">
+     <view>申请项目</view>
+     <input class='bx_s' type='text' placeholder='请填写' placeholder-class='placeholder_glay' />
+    </view>
+</view>
+</view>
+
+<!--时间  -->
+  <view class='section-wrap'>
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+  <view class="picker picker_custom">
+           <view class='iconfont icon-youjian icon-youjian-x'></view>
+       <view>需求日期</view>{{date}}
+    </view>
+  </picker>
+</view>
+</view>
+<!--自动校准打卡记录  -->
+<view class='z_d'>采购明细</view>
+
+
+ <view class='section-wrap'>
+<!--物品名称  -->
+<view class='picker_custom'>
+   <view class='length_time_left'>物品名称</view>
+      <view class='length_time_right'><input type='text' placeholder-class='placeholder_glay' placeholder='请填写' class='length_time_right_input' value="" /></view>
+</view>
+
+<!--型号规格 -->
+<view class='picker_custom'>
+   <view class='length_time_left'>型号规格</view>
+      <view class='length_time_right'><input type='text' placeholder-class='placeholder_glay' placeholder='请填写' class='length_time_right_input' value="" /></view>
+</view>
+
+<!--数      量-->
+<view class='picker_custom'>
+   <text class='length_time_left' space="nbsp">数       量</text>
+      <view class='length_time_right'><input type='number' placeholder-class='placeholder_glay' placeholder='请填写' class='length_time_right_input' value="" /></view>
+</view>
+
+
+<!--金      额-->
+<view class='picker_custom'>
+   <text class='length_time_left' space="nbsp">金      额</text>
+      <view class='length_time_right'><input type='number' placeholder-class='placeholder_glay' placeholder='请填写' class='length_time_right_input' value="" /></view>
+</view>
+
+
+ <!--textarea  -->
+  <view class="page-section">
+    <view class="textarea-wrp">
+      <textarea class='textarea-ne' placeholder-class='textarea-ne-s' placeholder='备      注' auto-focus="true"/>
+    </view>
+  </view>
+
+
+<!--新增费用  -->
+<view class='jias_wrap'>
+<view class='icon-wrap'>
+  <view class='iconfont icon-jia icon-jia-x'></view>
+</view>
+    <view>新增费用</view>
+</view>
+
+
+</view>
+
+  <!--上传文件  -->
+  <view class='upload_wrap'>
+     <view class='f_j'>说明附件</view>
+     <view class='imgarr-wrap'>
+         <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+           <view class="closeImv"  mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}">
+                   <view class='iconfont icon-cuo icon-cuo-x'></view>
+           </view>
+        </view>
+    </block>
+     <view class='upload_ne' bindtap="chooseImage">
+         <view class='iconfont icon-fujian'></view>
+     </view>
+     </view>
+  </view>
+  <!--审批人  -->
+  <view class='upload_wrap_sp'>
+     <view class='f_j'>审批人</view>
+     <view class='sp_img_wrap_s'>
+       <view class='sp_img_wrap' wx:if='{{show==false}}'>
+         <view class='iconfont icon-cuo icon-cuo-x' bindtap='sc'></view>
+         <image class='sp_img_wrap_img' src="{{pic_ns}}"></image>
+       </view>
+         <view class='sp_img_wrap sp_img_wrap_bg'>
+         <view class='iconfont icon-jia icon-jia-x_f'></view>
+       </view>
+       </view>
+  </view>
+
+ </view>

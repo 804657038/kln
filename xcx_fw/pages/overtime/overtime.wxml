@@ -1,0 +1,77 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>加班</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+ 
+ <!--textarea  -->
+  <view class="page-section">
+    <view class="textarea-wrp">
+      <textarea class='textarea-ne' placeholder-class='textarea-ne-s' placeholder='加班事由' auto-focus="true"/>
+    </view>
+  </view>
+
+ <view class='section-wrap'>
+<!--开始时间  -->
+<view class="tui-picker-content">
+ <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+ <view class="tui-picker-detail picker_custom">
+     <view class='iconfont icon-youjian icon-youjian-x'></view>
+   <view>开始时间</view>{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+ </view>
+ </picker>
+</view>
+<!--结束时间  -->
+<view class="tui-picker-content">
+ <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+ <view class="tui-picker-detail picker_custom">
+     <view class='iconfont icon-youjian icon-youjian-x'></view>
+  <view>结束时间</view>{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}
+ </view>
+ </picker>
+</view>
+<!--请假时长  -->
+<view class='picker_custom picker_customs'>
+   <view class='length_time_left'>出差时长</view>
+      <view class='length_time_right'><input type='number' placeholder='0天' class='length_time_right_input' value="" /></view>
+</view>
+
+</view>
+<!--自动校准打卡记录  -->
+<view class='z_d'>自动校准打卡记录</view>
+
+
+  <!--上传文件  -->
+  <view class='upload_wrap'>
+     <view class='f_j'>说明附件</view>
+     <view class='imgarr-wrap'>
+         <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+           <view class="closeImv"  mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}">
+                   <view class='iconfont icon-cuo icon-cuo-x'></view>
+           </view>
+        </view>
+    </block>
+     <view class='upload_ne' bindtap="chooseImage">
+         <view class='iconfont icon-fujian'></view>
+     </view>
+     </view>
+  </view>
+  <!--审批人  -->
+  <view class='upload_wrap_sp'>
+     <view class='f_j'>审批人</view>
+     <view class='sp_img_wrap_s'>
+       <view class='sp_img_wrap' wx:if='{{show==false}}'>
+         <view class='iconfont icon-cuo icon-cuo-x' bindtap='sc'></view>
+         <image class='sp_img_wrap_img' src="{{pic_ns}}"></image>
+       </view>
+         <view class='sp_img_wrap sp_img_wrap_bg'>
+         <view class='iconfont icon-jia icon-jia-x'></view>
+       </view>
+       </view>
+  </view>
+
+ </view>

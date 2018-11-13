@@ -1,0 +1,29 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>个人信息</view>
+      <view class='icon-right'></view>
+</view>
+<!--main  -->
+<view class='main'>
+<!--header  -->
+   <view class='header-personal'>
+      <view class='header-personal-left'>
+         <image class='header-personal-left-img' src='{{pic}}'></image>
+      </view>
+      <view class='header-personal-right'>
+          <view class='header-personal-right-name'>{{name}}</view>
+          <view class='header-personal-right-icon iconfont {{icon}}'></view>
+      </view>
+   </view>
+   <!--list  -->
+   <view class='list-personal-wrap'>
+   <view class='list-personal' wx:for="{{arrty}}" wx:for-item="item" id="{{item.id}}">
+       <view class='list-personal-left'>{{item.inner}}</view>
+         <view class='list-personal-right {{item.colour}}'>{{item.xx}}</view>
+   </view>
+   </view>
+  <!--btn  -->
+<button class='personal-btn'>发消息</button>
+
+<view class='Invitation'>{{Invitation}}</view>
+</view>

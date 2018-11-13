@@ -1,0 +1,250 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 26rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+    z-index: 10000000;
+}
+.main{
+    background: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:55px;
+    overflow: auto;
+}
+.section-wrap{
+  background-color: #fff;
+}
+.picker_custom{
+  width: 90%;
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:space-between;
+  color: #555;
+  font-size: 26rpx;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 0 auto;
+  padding-right: 45rpx;
+  box-sizing:border-box;
+  position: relative;
+}
+.icon-youjian-x{
+  position: absolute;
+  right: 0;
+  color: #ccc;
+}
+.length_time_left{
+  color: #555555;
+  font-size: 26rpx;
+  padding-right: 45rpx;
+}
+.length_time_right_input{
+  text-align: right;
+}
+.picker_customs{
+  border: none;
+}
+.z_d{
+  height: 70rpx;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:space-between;
+  font-size: 22rpx;
+  color:#999999;
+}
+.page-section{
+  width: 100%;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+.textarea-ne{
+  background-color: #fff;
+  width: 90%;
+  padding-top: 30rpx;
+  height: 260rpx;
+  margin: 20rpx auto;
+}
+.textarea-ne-s{
+  font-size: 26rpx;
+  color: #555555;
+}
+/*附件  */
+.upload_wrap{
+  width: 100%;
+  background-color: #fff; 
+  padding: 5%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+.f_j{
+  font-size: 26rpx;
+  color: #555555;
+}
+.upload_ne{
+  width: 100rpx;
+  height: 100rpx;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+  color: #ccc;
+}
+
+/*已选择的图片*/
+.imgarr-wrap{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+    margin-top: 20rpx;
+}
+ .upFile{
+    width: 100rpx;
+    height:100rpx;
+    position: relative;
+    padding: 0rpx 7rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+}
+ .upFile .itemImv{
+    width:100rpx;
+    height:100rpx;
+    padding: 0rpx 7rpx;
+ }
+ .closeImv{
+   width: 10rpx;
+   height: 10rpx;
+   position: absolute;
+   top:-5rpx;
+   right: -5rpx;
+ }
+
+
+.upload_wrap_sp{
+  width: 100%;
+  height: 220rpx;
+  background-color: #fff;
+  margin: 20rpx auto;
+  padding: 5%;
+  box-sizing: border-box;
+  margin-bottom: 130rpx;
+}
+.sp_img_wrap{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: pink;
+  margin-top: 30rpx;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+  margin-right:20rpx;
+}
+
+.icon-cuo-x{
+  position: absolute;
+  right: -5rpx;
+  top:-5rpx;
+  color: #999;
+}
+.sp_img_wrap_s{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+}
+.icon-jia-x{
+  color: #fff;
+  font-size: 20rpx;
+
+}
+.sp_img_wrap_bg{
+  background-color: #fff;
+  border:1px solid #ccc;
+}
+.sp_img_wrap_img{
+  width: 100%;
+  height: 100%;
+}
+.border_none{
+  border:none;
+}
+.bx_s{
+  text-align:right;
+}
+.placeholder_glay{
+  color: #c8c8c8;
+}
+.jias_wrap{
+  display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  border-top:1px solid #e8e8e8;
+  color:#333333;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+}
+.icon-wrap{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #999999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+  margin-right: 10rpx;
+}
+.icon-jia-x_f{
+  color: #ccc;
+}

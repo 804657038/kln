@@ -1,0 +1,150 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>陈瘦瘦的请假申请</view>
+      <view class='icon-right'></view>
+</view>
+<!--main  -->
+<view class='main'>
+      <view class='header'>
+          <view class='header-left'>
+            <view class='header-left-user'>
+              <image class='header-left-img' src='{{src}}'></image>
+            </view>
+            <view class='header-left-name'>{{name}}</view>
+          </view>
+          <view class='header-right'>{{approval}}</view>
+      </view>
+
+      <!--单号  -->
+    <view class='xx-numbers'>
+       <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>审批编号：</view>
+           <view class='xx-numbers-right'>{{number1}}</view>
+       </view>
+           <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>请假类型：</view>
+           <view class='xx-numbers-right'>{{number2}}</view>
+       </view>
+           <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>开始时间：</view>
+           <view class='xx-numbers-right'>{{number3}}</view>
+       </view>
+           <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>开始时间：</view>
+           <view class='xx-numbers-right'>{{number4}}</view>
+       </view>
+           <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>开始时间：</view>
+           <view class='xx-numbers-right'>{{number5}}</view>
+       </view>
+           <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>开始时间：</view>
+           <view class='xx-numbers-right'>{{number6}}</view>
+       </view>
+              <view class='xx-numbers-p'>
+           <view class='xx-numbers-left'>说明附件：</view>
+           <view class='xx-numbers-right'>{{number7}}</view>
+       </view>
+    </view>
+<!--进度  -->
+   <view class='apply-wrap'>
+      <view class='position-xian'></view>
+      <view class='apply-box'>
+        <view class='apply-box-left'>
+            <view class="group">
+              <block wx:for="{{iconColor}}">
+                <icon type="success" size="20" color="{{item}}"/>
+              </block>
+            </view>
+        </view>
+        <view class='apply-box-right'>
+              <view class='apply-box-right-up'>
+                 <view class='apply-box-names'>{{call}}</view>
+                   <view class='apply-box-time'>{{call_times}}</view>
+              </view>
+              <view class='apply-box-right-dow'>{{situation}}</view>
+        </view>
+      </view>
+         <view class='apply-box'>
+        <view class='apply-box-left'>
+            <view class="group">
+              <block wx:for="{{iconColor}}">
+                <icon type="success" size="20" color="{{item}}"/>
+              </block>
+            </view>
+        </view>
+        <view class='apply-box-right'>
+              <view class='apply-box-right-up'>
+                 <view class='apply-box-names'>{{call}}</view>
+                   <view class='apply-box-time'>{{call_times}}</view>
+              </view>
+              <view class='apply-box-right-dow'>{{situation}}</view>
+        </view>
+      </view>
+         <view class='apply-box'>
+        <view class='apply-box-left'>
+            <view class="group">
+              <block wx:for="{{iconColor}}">
+                <icon type="success" size="20" color="{{item}}"/>
+              </block>
+            </view>
+        </view>
+        <view class='apply-box-right'>
+              <view class='apply-box-right-up'>
+                 <view class='apply-box-names'>{{call}}</view>
+                   <view class='apply-box-time'>{{call_times}}</view>
+              </view>
+              <view class='apply-box-right-dow'>{{situation}}</view>
+        </view>
+      </view>
+         <view class='apply-box'>
+        <view class='apply-box-left'>
+            <view class="group">
+              <block wx:for="{{iconColor}}">
+                <icon type="success" size="20" color="{{item}}"/>
+              </block>
+            </view>
+        </view>
+        <view class='apply-box-right'>
+              <view class='apply-box-right-up'>
+                 <view class='apply-box-names'>{{call}}</view>
+                   <view class='apply-box-time'>{{call_times}}</view>
+              </view>
+              <view class='apply-box-right-dow'>{{situation}}</view>
+        </view>
+      </view>
+         <view class='apply-box'>
+        <view class='apply-box-left'>
+            <view class="group">
+              <block wx:for="{{iconColor}}">
+                <icon type="success" size="20" color="{{item}}"/>
+              </block>
+            </view>
+        </view>
+        <view class='apply-box-right'>
+              <view class='apply-box-right-up'>
+                 <view class='apply-box-names'>{{call}}</view>
+                   <view class='apply-box-time'>{{call_times}}</view>
+              </view>
+              <view class='apply-box-right-dow'>{{situation}}</view>
+        </view>
+      </view>
+
+
+   </view>
+
+    <!--底部悬浮  -->
+    <view class='food-suspension-wrap'>
+       <view class='suspension'>
+          <view class='iconfont icon-xinxi icon-x'></view>
+          <view class='wenz'>催办</view>
+       </view>
+        <view class='suspension'>
+          <view class='iconfont icon-chexiao icon-x gray'></view>
+           <view class='wenz gray'>撤销</view>
+        </view>
+    </view>
+
+   <!--增加高度  -->
+     <view class='gd'></view>
+</view>

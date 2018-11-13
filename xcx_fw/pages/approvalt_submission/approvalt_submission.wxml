@@ -1,0 +1,70 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>我的审批</view>
+      <view class='iconfont icon-sousuo icon-right'></view>
+</view>
+
+<view class='main'>
+<view >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">审批的</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">已提交</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <!--1  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[0,1,2,3,4,5,6]}}"  wx:key="*this">
+                    <view class="item-ans">
+                       <view class='item-ans-left'>
+                           <view class='left-group1'>
+                             <image class='left-group1-leave-img' src='{{src}}'></image> 
+                             <view class='left-group1-names'>{{names}} - <view class='name_x'>{{state}}</view></view>
+                           </view>
+                            <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{types}}</view>
+                            </view>
+                               <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{starts}}</view>
+                            </view>
+                               <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{ends}}</view>
+                            </view>
+                       </view>
+                       <view class='item-ans-right'>{{times}}</view>
+                    </view>
+                </block>
+                     <view style='height:50px;'></view>
+            </scroll-view>
+        </swiper-item>
+        <!--2  -->
+        <swiper-item >
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[0,1,2,3,4,5,6]}}"  wx:key="*this">
+                    <view class="item-ans">
+                       <view class='item-ans-left'>
+                           <view class='left-group1'>
+                             <view class='left-group1-leave'>{{leave}}</view>
+                             <view class='left-group1-approval'>{{approval}}</view>
+                           </view>
+                            <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{types}}</view>
+                            </view>
+                               <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{starts}}</view>
+                            </view>
+                               <view class='left-group2'>
+                                 <view class='left-group2-leave'>{{ends}}</view>
+                            </view>
+                       </view>
+                       <view class='item-ans-right'>{{times}}</view>
+                    </view>
+                </block>
+                 <view style='height:50px;'></view>
+            </scroll-view>
+        </swiper-item>
+             
+    </swiper>
+</view>
+</view>

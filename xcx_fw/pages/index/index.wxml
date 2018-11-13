@@ -13,5 +13,5 @@
 <view class='list'>{{list}}</view>
 
 <view class='Agreement3'>{{jw}}</view>
-
+<view class='fd'></view>
 </view>

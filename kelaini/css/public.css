@@ -219,5 +219,13 @@ img {
   #dgsy .bottom {
     width: 100%;
     bottom: 0; }
-
+  .kln-mid{
+    position: relative;
+  }
+.logo03{
+  width: 70%;
+  top: 24%;
+  font-size:0.28rem;
+  text-align: center;
+}
 /*# sourceMappingURL=public.css.map */

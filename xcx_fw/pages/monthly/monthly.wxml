@@ -1,0 +1,54 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>月报</view>
+      <view class='icon-right'></view>
+</view>
+ <view class='main'>
+
+  <!--分隔层  -->
+   <view class="section section-fg">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="本月工作" />
+   </view>
+  <!--分隔层  -->
+   <view class="section section-fg">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="下月计划" />
+   </view>
+  <!--分隔层  -->
+   <view class="section section-fg">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="其他事项" />
+   </view>
+
+
+  <!--上传文件  -->
+  <view class='upload_wrap'>
+     <view class='f_j'>说明附件</view>
+     <view class='imgarr-wrap'>
+         <!--这个是已经选好的图片-->
+    <block wx:for="{{imgArr}}" wx:key="key">
+        <view class="upFile" bindtap="showImage" style="border-radius: 5px" data-id="{{index}}">
+            <image class="itemImv" src="{{item}}"></image>
+           <view class="closeImv"  mode="scaleToFill" catchtap="deleteImv"  data-id="{{index}}">
+                   <view class='iconfont icon-cuo icon-cuo-x'></view>
+           </view>
+        </view>
+    </block>
+     <view class='upload_ne' bindtap="chooseImage">
+         <view class='iconfont icon-fujian'></view>
+     </view>
+     </view>
+  </view>
+  <!--审批人  -->
+  <view class='upload_wrap_sp'>
+     <view class='f_j'>审批人</view>
+     <view class='sp_img_wrap_s'>
+       <view class='sp_img_wrap' wx:if='{{show==false}}'>
+         <view class='iconfont icon-cuo icon-cuo-x' bindtap='sc'></view>
+         <image class='sp_img_wrap_img' src="{{pic_ns}}"></image>
+       </view>
+         <view class='sp_img_wrap sp_img_wrap_bg'>
+         <view class='iconfont icon-jia icon-jia-x_f'></view>
+       </view>
+       </view>
+  </view>
+
+ </view>
