@@ -1,7 +1,12 @@
 {
   "pages":[
+      "pages/news/news",
       "pages/Contacts/Contacts",
       "pages/company/company",
+    
+   
+      "pages/look_notice/look_notice",
+      "pages/advertisement_notice/advertisement_notice",
       "pages/personal_information/personal_information",
       "pages/communication/communication",
       "pages/copy/copy",

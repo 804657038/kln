@@ -1,0 +1,16 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>公告通知</view>
+      <view class=' icon-right'></view>
+</view>
+<!--通知的  -->
+<view class='main'>
+   <view class='notice-wrap' wx:for="{{arrty}}" wx:for-item="item">
+    <view class='time'>{{item.time}}</view>
+    <view class='notice-box'>
+      <view class='title'>{{item.title}}</view>
+      <view class='content'>{{item.content}}</view>
+      <view class='look-con'>{{item.look_con}}</view>
+    </view>
+   </view>
+</view>

@@ -1,31 +1,38 @@
   <view class='nav-wrap'>
       <view class='iconfont icon-fanhui icon-left'></view>
       <view class='nav-mid'>手机联系人</view>
-      <view class='iconfont  icon-sousuo icon-right'></view>
+      <view class='iconfont  icon-sousuo icon-right' bindtap='search'></view>
 </view>
-<view >
-<!-- 左侧列表内容部分 -->
-  <scroll-view class="content" enable-back-to-top scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" bindscroll="onPageScroll"> 
-    <view wx:for="{{listMain}}" wx:for-item="group" wx:key="{{group.id}}"  id="{{ 'inToView'+group.id}}" data-id='{{group.id}}'> 
-      <view class="address_top" >{{group.region}}</view> 
-        <view wx:for="{{group.brands}}" wx:for-item="item" wx:key="{{item.brandId}}"> 
-          <view class="address_bottom" data-id='{{item.brandId}}'>{{item.name}}</view> 
-        </view> 
-    </view> 
-  </scroll-view> 
-  <!-- 顶部固定分类 -->
-  <view class="list-fixed {{fixedTitle=='' ? 'hide':''}}" style="transform:translate3d(0,{{fixedTop}}px,0);">
-    <view class="fixed-title">
-    {{fixedTitle}}
+<!--main  -->
+<view class='main'>
+ <block wx:for="{{groups}}" wx:for-item="group">  
+    <view class='contacts-list' id="{{group.list}}">{{group.list}}</view>
+   <view class='contacts-wrap' wx:for="{{group.arrty}}" wx:for-item="item">
+      <view class='contacts-box'>
+      <view class='contacts-box-inder'>
+        <view class='contacts-user'><image class='contacts-user-img' src='{{item.pic}}'></image></view>
+           <view class='contacts-name'>{{item.name}}</view>
+           </view>
+              <view class='contacts-adds' bindtap='adds'>{{item.adds}}</view>
+      </view>
+   </view>
+   </block>
+
+   <!--搜索  -->
+<view class='suosuo-wrap' wx:if="{{suosuo==true}}">
+   <view class='suosuo'>
+       <view class='iconfont icon-fanhui iconfont-x' bindtap='returns'></view>
+       <view class="section">
+          <input placeholder="搜索" auto-focus/>
+        </view>
+   </view>
+</view>
+<!--添加-弹  -->
+<view class='mask-tan-wrap' wx:if="{{tan==true}}" bindtap='close'>
+    <view class='mask-tan'>
+      <view class='mask-btn'>添加手机联系人</view>
+       <view class='mask-btn'>微信邀请好友</view>
     </view>
-  </view>
-  <!-- 右侧字母导航 -->
-  <view class="orientation_region"> 
-    <view class="orientation">自动定位</view> 
-      <block wx:for="{{listMain}}"  wx:key="{{item.id}}"> 
-        <view class="orientation_city  {{isActive==item.id ? 'active':'' }}" bindtap="scrollToViewFn" data-id="{{item.id}}" >
-        {{item.region}}
-        </view> 
-    </block> 
-  </view>  
-</view> 
+</view>
+   <view style='height:100rpx;'></view>
+</view>

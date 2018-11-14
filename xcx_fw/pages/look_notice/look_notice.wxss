@@ -1,0 +1,85 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 38rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+    border-radius: 5px;
+}
+.main{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:55px;
+    overflow: auto;
+}
+.box-wrap{
+  padding: 0 30rpx;
+}
+.time{
+    padding: 30rpx 0;
+    font-size: 22rpx;
+    color: #666666;
+}
+.contents-wrap{
+  height: 530rpx;
+  background: url('http://i1.bvimg.com/650276/94ca9be94d175798.png')no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.title{
+  padding: 70rpx 0 40rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+.contents{
+  padding:0 50rpx;
+  text-indent: 30rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.fooder{
+  position: absolute;
+  bottom:100rpx;
+  width: 100%;
+  padding-right: 50rpx;
+  box-sizing: border-box;
+}
+.companys{
+  text-align:right;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.bg{
+  width: 100%;
+  height:304rpx;
+  position: fixed;
+  bottom:0;
+  background:url('http://i1.bvimg.com/650276/a83bb8396be65ff7.png')no-repeat;
+  background-size: 100%;
+}

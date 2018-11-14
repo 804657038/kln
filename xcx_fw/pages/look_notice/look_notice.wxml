@@ -1,0 +1,21 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>公告通知</view>
+      <view class=' icon-right'></view>
+</view>
+<!--main  -->
+<view class='main'>
+  <view class='box-wrap' >
+   <view class='time'>{{time}}</view>
+   <view class='contents-wrap'>
+     <view class='title'>{{title}}</view>
+     <view class='contents'>{{contents}}</view>
+     <view class='fooder'>
+     <view class='companys'>{{companys}}</view>
+     <view class='companys'>{{contents_date}}</view>
+     </view>
+   </view>
+   </view>
+
+   <view class='bg'></view>
+</view>
