@@ -1,0 +1,34 @@
+  <view class='nav-wrap'>
+      <view class='iconfont icon-fanhui icon-left'></view>
+      <view class='nav-mid'>打卡记录</view>
+      <view class='icon-right'></view>
+</view>
+  <view class='main'>
+<view class="wrapper">
+  <view class="og-calendar">
+    <view class="header">
+      <view class="month-pre" bindtap="changeDateEvent" data-year="{{data.beforeYear}}" data-month="{{data.beforMonth}}"> 
+        <view class='iconfont icon-zuojian icon-youjian-x'></view>
+      </view>
+      <view class="date-info">
+        <picker mode="date" fields="month" value="{{pickerDateValue}}" bindchange="datePickerChangeEvent">
+          <text wx:if="{{data.showYear}}">{{data.showYear}}年{{data.showMonth > 9 ? data.showMonth : ('0' + data.showMonth)}}月</text>
+          <text wx:if="{{!data.showYear}}">请选择日期</text>
+        </picker>
+      </view>
+      <view class="month-next" bindtap="changeDateEvent" data-year="{{data.afterYear}}" data-month="{{data.afterMonth}}">
+         <view class='iconfont icon-youjian icon-youjian-x'></view>
+      </view>
+    </view>
+
+    <view class="body row">  
+
+    </view>
+  </view>
+
+
+
+
+
+</view>
+</view>

@@ -1,0 +1,206 @@
+@import"../../utils/font.wxss";
+.icon-left{
+  color: #555;
+    font-size: 26rpx;
+}
+.nav-mid{
+  font-family:"Arial";
+  font-size: 34rpx;
+}
+.icon-right{
+  color: #555;
+   font-size: 40rpx;
+
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+     -webkit-justify-content:space-between;
+    padding: 25rpx 30rpx;
+    width: 100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    height: 100rpx;
+    position: fixed;
+    top:0;
+}
+.main{
+    background: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:55px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    -webkit-display: flex;
+     -webkit-justify-content: center;
+    padding-top: 200rpx;
+}
+.clock-wrap{
+  width: 360rpx;
+  height: 460rpx;
+}
+.clock-up{
+  width: 360rpx;
+  height: 360rpx;
+  background: url('http://i2.bvimg.com/650276/d2e89b90c7b3e3d4.png') no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+}
+.clock-time{
+  font-size: 66rpx;
+  color: #fff;
+}
+.clock-state{
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+}
+.clock-down{
+  width: 90%;
+  height: 80rpx;
+  background-color: #fad865;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  font-size: 26rpx;
+  color: #fff;
+  margin-top: 30rpx;
+}
+.positions-box{
+  background-color:#d9d9d9;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+}
+.positions-box{
+  margin: 0 auto;
+}
+.positions-wrap{
+  position: fixed;
+  bottom:280rpx;
+}
+.positions-up{
+  color: #fff;
+}
+.positions-wz{
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 25rpx;
+}
+.please{
+  position: fixed;
+  bottom: 60rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.positions-wrap-Success{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: 480rpx;
+  background:url('http://i2.bvimg.com/650276/b4280cf0edbc82b5.png') no-repeat;
+  background-size:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+}
+.positions-Success-wz{
+  font-size: 28rpx;
+  color: #00a6a0;
+  font-weight:bold;
+}
+.positions-Success-icon{
+  text-align:center;
+  margin-bottom: 10rpx;
+  color: #00a6a0;
+}
+/*弹窗  */
+.mask-cark-wrap{
+  width:100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000000000000000000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+}
+.mask-cark{
+  width: 500rpx;
+  height: 600rpx;
+  background: url('http://i2.bvimg.com/650276/69f0c796c4903366.png')no-repeat;
+  background-size: 100%;
+  padding-top:120rpx;
+}
+.mask-cark-Success{
+  font-size: 68rpx;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 115rpx;
+}
+.mask-cark-zu{
+    height:120rpx;
+    -webkit-display:flex;
+    -webkit-align-items: center;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+}
+.mask-cark-time{
+  font-size: 26rpx;
+  color: #00a6a0;
+  text-align: center;
+  width: 100%;
+
+}
+.mask-cark-Range{
+  font-size: 26rpx;
+  color: #666;
+  text-align: center;
+  width: 100%;
+}
+.mask-cark-kown{
+  margin: 0 auto;
+  width: 300rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  border:1px solid #00a6a0;
+  border-radius: 50rpx;
+  margin-top:40rpx;
+  font-size: 26rpx;
+  color: #00a6a0;
+}

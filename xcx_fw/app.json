@@ -1,10 +1,11 @@
 {
   "pages":[
-      "pages/news/news",
-      "pages/Contacts/Contacts",
+      "pages/date_look/index",
+      "pages/date/index",
+      "pages/clock/clock",
       "pages/company/company",
-    
-   
+      "pages/Contacts/Contacts",
+      "pages/news/news",
       "pages/look_notice/look_notice",
       "pages/advertisement_notice/advertisement_notice",
       "pages/personal_information/personal_information",

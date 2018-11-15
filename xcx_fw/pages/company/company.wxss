@@ -58,8 +58,8 @@
  justify-content: space-between;
  border-bottom:1px solid #f6f6f6;
  width: 100%;
- overflow: hidden;
  background-color: #fff;
+ position: relative;
 }
 .content {
  width: 100%;
@@ -134,11 +134,9 @@ justify-content: space-between;
    height: 80rpx;
    padding-left: 25rpx;
    display: flex;
-   align-content: space-between;
-    flex-wrap: wrap;
-    -webkit-display: flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: space-between;
+   align-items: center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
 }
 .content-mid-name{
   width: 100%;
@@ -153,6 +151,28 @@ justify-content: space-between;
 .content-right{
   font-size: 22rpx;
   color: #999;
+}
+/*下拉  */
+.drop-down-wrap{
+  width: 300rpx;
+  position: absolute;
+  right:0;
+  top: 128rpx;
+  z-index: 10000000000000;
+  -moz-box-shadow:-2px 2px 5px #ddd; -webkit-box-shadow:-2px 2px 5px #ddd; box-shadow:-2px 2px 5px #ddd;
+}
+.drop-down-item{
+  height: 70rpx;
+  border-bottom: 1px solid #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+   -webkit-justify-content: center;
+}
+.Show{
+  display: none;
 }
 /*shousuo  */
 .suosuo-wrap{

@@ -17,12 +17,15 @@
        </view>
        <view class='content-mid'>
          <view class='content-mid-name'>{{item.news_name}}</view>
-          <view class='content-mid-news'>{{item.news_}}</view>
+     
        </view>
      </view>
        <view class='content-right'>{{item.news_time}}</view>
   </view>
   <view class="del" catchtap="del" data-index="{{index}}">删除</view>
+    <view class="drop-down-wrap {{item.isTouchMove ? '' : 'Show'}}">
+       <view class='drop-down-item'>{{item.list_down}}</view>
+    </view>
  </view>
 
 

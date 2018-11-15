@@ -1,0 +1,49 @@
+  <view class='nav-wrap'>
+      <view class='iconfont  icon-left'></view>
+      <view class='nav-mid'>打卡</view>
+      <view class='iconfont icon-kaoqinguanli icon-right'></view>
+</view>
+<!--main  -->
+<view class='main'>
+       <view class='clock-wrap'>
+         <view class='clock-up' bindtap='opens_op'>
+            <view>
+           <view class='clock-time'>{{time}}</view>
+           <view class='clock-state'>{{state}}</view>
+           </view>
+         </view>
+         <view class='clock-down'>{{tx}}</view>
+       </view>
+<!--定位中  -->
+       <view class='positions-wrap' wx:if="{{show1==false}}">
+          <view class='positions'>
+          <view class='positions-box'>
+            <view class='positions-up iconfont icon-dingwei'>
+            </view>
+            </view>
+            <view class='positions-wz'>{{positions}}{{city}}</view>
+          </view>
+       </view>
+<!--定位成功  -->
+     <view class='positions-wrap-Success' wx:if="{{show1==true}}">
+         <view class='positions-Success'>
+           <view class='positions-Success-icon iconfont icon-gongsi'></view>
+           <view class='positions-Success-wz'>{{Range}}</view>
+         </view>
+     </view>
+
+<!--下班  -->
+       <view class='please'>{{please}}</view>
+
+       <!--打卡成功弹窗  -->
+       <view class='mask-cark-wrap' wx:if="{{show2==true}}"> 
+         <view class='mask-cark'>
+           <view class='mask-cark-Success'>{{clock}}</view>
+            <view class='mask-cark-zu'>
+                <view class='mask-cark-time'>{{time_clock}}</view>
+                <view class='mask-cark-Range'>{{range_clock}}</view>
+            </view>
+            <view class='mask-cark-kown' bindtap='close'>{{clock_kown}}</view>
+         </view>
+       </view>
+</view>
