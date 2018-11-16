@@ -27,7 +27,7 @@ Page({
   },
   getCode: function () {
     var a = this.data.phone;
-    var _this = this;
+    var _this = this; 
     var myreg = /^(14[0-9]|13[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$$/;
     if (this.data.phone == "") {
       wx.showToast({

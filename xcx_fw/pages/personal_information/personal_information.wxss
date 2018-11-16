@@ -96,7 +96,7 @@
   width:90%;
   height: 80rpx;
   background-color: #00a6a0;
-  margin: 30rpx;
+  margin: 30rpx auto;
   color: #fff;
   font-size: 26rpx;
   display: flex;

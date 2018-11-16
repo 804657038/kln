@@ -3,6 +3,7 @@
 Page({
  data: {
    suosuo: false,
+   nums_news:'3',
    news:'公告 | 台风放假通知',
    time:'12"00',
   items: [{
@@ -17,7 +18,28 @@ Page({
     }, {
       nums: '5',
       pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
-    }],
+  }, {
+    nums: '5',
+    pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+  }, {
+    nums: '5',
+    pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+  }, {
+    nums: '5',
+    pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+  }, {
+    nums: '5',
+    pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+  }],
     startX: 0, //开始坐标
     startY: 0
   },

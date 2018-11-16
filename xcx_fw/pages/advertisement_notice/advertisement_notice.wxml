@@ -13,4 +13,6 @@
       <view class='look-con'>{{item.look_con}}</view>
     </view>
    </view>
+   <!--高度  -->
+   <view style='height:110rpx;'></view>
 </view>

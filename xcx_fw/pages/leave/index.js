@@ -1,4 +1,4 @@
-var dateTimePicker = require('../../utils/dateTimePicker.js');
+
 
 Page({
   data: {
@@ -28,15 +28,9 @@ Page({
       }
     ],
     show:false,
-    date: '2018-10-01',
-    time: '12:00',
-    dateTimeArray: null,
-    dateTime: null,
-    dateTimeArray1: null,
-    dateTime1: null,
     startYear: 2000,
     endYear: 2050,
-    days:"0",
+    dayss:"",
     pic_ns:"http://i2.bvimg.com/650276/974d1dc7b66f557f.png"
 
   },
@@ -46,57 +40,32 @@ Page({
       index: e.detail.value
     })
   },
-  onLoad() {
-    // 获取完整的年月日 时分秒，以及默认显示的数组
-    var obj = dateTimePicker.dateTimePicker(this.data.startYear, this.data.endYear);
-    var obj1 = dateTimePicker.dateTimePicker(this.data.startYear, this.data.endYear);
-    // // 精确到分的处理，将数组的秒去掉
-    // var lastArray = obj1.dateTimeArray.pop();
-    // var lastTime = obj1.dateTime.pop();
 
+
+  // 开始时间
+  bindDateChange1: function (e) {
+    var start_date = new Date(e.detail.value);
+    var end_date = new Date(this.data.date2);
+    var days = end_date.getTime() - start_date.getTime();
+    var day = parseInt(days / (1000 * 60 * 60 * 24));
     this.setData({
-      dateTime: obj.dateTime,
-      dateTimeArray: obj.dateTimeArray,
-      dateTimeArray1: obj1.dateTimeArray,
-      dateTime1: obj1.dateTime
-    });
+      date1: e.detail.value,
+      dayss: day
+    })
   },
-  changeDate(e) {
-    this.setData({ date: e.detail.value });
-  },
-  changeTime(e) {
-    this.setData({ time: e.detail.value });
-  },
-  changeDateTime(e) {
-
-    this.setData({ dateTime: e.detail.value });
-    
-  },
-  changeDateTime1(e) {
-    this.setData({ dateTime1: e.detail.value });
-  },
-  changeDateTimeColumn(e) {
-    var arr = this.data.dateTime, dateArr = this.data.dateTimeArray;
-
-    arr[e.detail.column] = e.detail.value;
-    dateArr[2] = dateTimePicker.getMonthDay(dateArr[0][arr[0]], dateArr[1][arr[1]]);
-
+  // 结束时间
+  bindDateChange2: function (e) {
+    var start_date = new Date(this.data.date1);
+    var end_date = new Date(e.detail.value);
+    var days = end_date.getTime() - start_date.getTime();
+    var day = parseInt(days / (1000 * 60 * 60 * 24));
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      dateTimeArray: dateArr,
-      dateTime: arr
-    });
+      date2: e.detail.value,
+      dayss: day
+    })
   },
-  changeDateTimeColumn1(e) {
-    var arr = this.data.dateTime1, dateArr = this.data.dateTimeArray1;
 
-    arr[e.detail.column] = e.detail.value;
-    dateArr[2] = dateTimePicker.getMonthDay(dateArr[0][arr[0]], dateArr[1][arr[1]]);
-
-    this.setData({
-      dateTimeArray1: dateArr,
-      dateTime1: arr
-    });
-  },
   /** 选择图片 */
   chooseImage: function () {
     var that = this;

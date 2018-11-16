@@ -25,7 +25,15 @@ Page({
         mode: 'scaleToFill',
         text: 's',
         pic: 'http://i2.bvimg.com/650276/bee581c260d40094.png',
-    }],
+    }, {
+      mode: 'scaleToFill',
+      text: 's',
+      pic: 'http://i2.bvimg.com/650276/bee581c260d40094.png',
+      }, {
+        mode: 'scaleToFill',
+        text: 's',
+        pic: 'http://i2.bvimg.com/650276/bee581c260d40094.png',
+      }],
     contents:[{
       text1:'日',
       text2:'日报',

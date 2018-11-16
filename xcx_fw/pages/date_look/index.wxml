@@ -22,10 +22,30 @@
     </view>
 
     <view class="body row">  
-
+           <view class='attendance-wrap'>
+             <view class='attendance-item'>
+                <view class='attendance-up'>{{normals}}</view>
+                <view class='attendance-down'>{{days}}</view>
+             </view>
+               <view class='attendance-item'>
+                <view class='attendance-up'>{{normals}}</view>
+                <view class='attendance-down'>{{days}}</view>
+             </view>
+               <view class='attendance-item'>
+                <view class='attendance-up'>{{normals}}</view>
+                <view class='attendance-down'>{{days}}</view>
+             </view>
+           </view>
     </view>
   </view>
-
+  <!--迟到  -->
+   <view class='status' wx:for="{{arrty}}" wx:for-item="groud">
+     <view class='status-titile'>
+       <view class='spot'></view>
+       <view class='status-content'>{{groud.status_content}}</view>
+     </view>
+     <view class='status-item' wx:for="{{groud.tiemrs}}" wx:for-item="item">{{item.stayus_time}}</view>
+   </view>
 
 
 

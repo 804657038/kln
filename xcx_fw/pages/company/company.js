@@ -8,11 +8,54 @@ Page({
       nums: '5',
       pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png',
       news_name: '新鸿基运广场物业管理有限公司',
-      news_: '李瘦瘦加入企业',
-      news_time: '12:00',
-      list_down:'111'
+      list_down:'设计部',
     }, {
       nums: '2',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
+      pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
+    }, {
+      nums: '5',
       pic: 'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
     }, {
       nums: '5',

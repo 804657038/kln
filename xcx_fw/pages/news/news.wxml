@@ -1,6 +1,6 @@
   <view class='nav-wrap'>
-      <view class='iconfont icon-fanhui icon-left'></view>
-      <view class='nav-mid'>手机联系人</view>
+      <view class='iconfont icon-sousuo icon-left' bindtap='search'></view>
+      <view class='nav-mid'>消息({{nums_news}})</view>
       <view class='iconfont  icon-jia1 icon-right'></view>
 </view>
 <!--main  -->
@@ -42,5 +42,6 @@
         </view>
    </view>
 </view>
-
+   
+    <view style='height:110rpx;'></view>
 </view>

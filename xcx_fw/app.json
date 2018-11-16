@@ -1,47 +1,86 @@
 {
   "pages":[
-      "pages/date_look/index",
-      "pages/date/index",
-      "pages/clock/clock",
-      "pages/company/company",
-      "pages/Contacts/Contacts",
-      "pages/news/news",
-      "pages/look_notice/look_notice",
-      "pages/advertisement_notice/advertisement_notice",
-      "pages/personal_information/personal_information",
-      "pages/communication/communication",
-      "pages/copy/copy",
-      "pages/recipient/recipient",
-      "pages/announcement/announcement",
-      "pages/notice/notice",
-      "pages/overtime/overtime",  
-      "pages/monthly/monthly",
-      "pages/approvalt_submission/approvalt_submission",
-      "pages/record/record",
-      "pages/weekly/weekly",
-      "pages/index/index",
-      "pages/application_approval/application_approval",
-      "pages/egress/egress",
-      "pages/home_page/index",
       "pages/leave/index",
-      "pages/release/index",
       "pages/work/index",
+      "pages/communication/communication",
+      "pages/application_approval/application_approval",
+      "pages/personal_information/personal_information",
+      "pages/Contacts/Contacts",
+      "pages/company/company",
+      "pages/advertisement_notice/advertisement_notice",
+      "pages/look_notice/look_notice",
+      "pages/news/news",
+      "pages/clock/clock",
+      "pages/announcement/announcement",
+      "pages/cost/cost",
+      "pages/application_decision/application_decision",
+      "pages/application_leave/application_leave",
+      "pages/monthly/monthly",
+      "pages/record/record",
+      "pages/overtime/overtime",
+      "pages/notice/notice",
+      "pages/copy/copy",
+      "pages/date/index",
+      "pages/date_look/index",
+      "pages/daily/daily",
       "pages/account/index",
+      "pages/recipient/recipient",
+      "pages/approvalt_submission/approvalt_submission",
+      "pages/purchase/purchase",
+      "pages/egress/egress",
       "pages/login/index",
+      "pages/index/index",
+      "pages/home_page/index",
+      "pages/weekly/weekly",
+      "pages/release/index",
       "pages/set_up/index",
       "pages/modify/index",
-      "pages/travel/travel",
-      "pages/purchase/purchase",
-      "pages/cost/cost",
-      "pages/application_leave/application_leave",
-      "pages/application_decision/application_decision",
-      "pages/daily/daily"
-      
+      "pages/travel/travel"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
-  }
+  },
+    "tabBar": {
+      "color": "#333333",
+      "selectedColor": "#00a6a0",
+      "borderStyle": "white",
+      "backgroundColor": "#fff",
+      "list": [
+        {
+          "pagePath": "pages/news/news",
+          "selectedIconPath":"images/a1.png",
+          "iconPath": "images/a2.png",
+          "text": "消息"
+        },
+        {
+          "pagePath": "pages/company/company",
+          "selectedIconPath": "images/b1.png",
+          "iconPath": "images/b2.png",
+          "text": "通讯"
+        },
+        {
+          "pagePath": "pages/clock/clock",
+          "selectedIconPath": "images/c1.png",
+          "iconPath": "images/c2.png",
+          "text": "打卡"
+        },
+        {
+          "pagePath": "pages/work/index",
+          "selectedIconPath": "images/d1.png",
+          "iconPath": "images/d2.png",
+          "text": "工作"
+        },
+        {
+          "pagePath": "pages/egress/egress",
+          "selectedIconPath": "images/e1.png",
+          "iconPath": "images/e2.png",
+          "text": "我的"
+        }
+        
+      ]
+    },
+    "debug": true
 }

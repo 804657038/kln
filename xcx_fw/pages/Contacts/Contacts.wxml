@@ -34,5 +34,5 @@
        <view class='mask-btn'>微信邀请好友</view>
     </view>
 </view>
-   <view style='height:100rpx;'></view>
+   <view style='height:125rpx;'></view>
 </view>

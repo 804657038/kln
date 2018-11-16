@@ -4,18 +4,45 @@ import { promiseHandle, log, formatNumber } from '../../utils/util';
 
 Page({
   data: {
-    words: '上下班打卡（09:00-18:00）',
-    arrty: [{
-      duty: '上班',
-      fram_time: '09:07',
-      fram_p: '上班迟到',
+    normals:'正常打卡',
+    days:'21天',
+    arrty:[{
+      status_content:'迟到',
+      tiemrs:[{
+        stayus_time:'2018 - 09 - 03 （周三） 09 : 21'
+      }, {
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+        }, {
+          stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+        }]
     }, {
-      words: '上下班打卡（09:00-18:00）',
-      duty: '上班',
-      fram_time: '09:07',
-      fram_p: '上班迟到',
+      status_content: '迟到',
+      tiemrs: [{
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }, {
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }, {
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }]
+      }, {
+        status_content: '迟到',
+        tiemrs: [{
+          stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+        }, {
+          stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+        }, {
+          stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+        }]
+    }, {
+      status_content: '迟到',
+      tiemrs: [{
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }, {
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }, {
+        stayus_time: '2018 - 09 - 03 （周三） 09 : 21'
+      }]
     }],
-
     showMonth: {},
     data: { showMonth: '' },
     selectDateText: '',

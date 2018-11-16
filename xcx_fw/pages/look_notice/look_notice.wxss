@@ -36,6 +36,10 @@
     top:55px;
     overflow: auto;
 }
+.gd{
+  height: 10rpx;
+  background-color: #f6f6f6;
+}
 .box-wrap{
   padding: 0 30rpx;
 }

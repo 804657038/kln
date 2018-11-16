@@ -300,7 +300,7 @@
     color: #fff;
 }
 .frame-inner-right{
-    display: flex;
+  display: flex;
   align-items: center;
   -webkit-display: flex;
   -webkit-align-items: center;
@@ -322,4 +322,49 @@
 }
 .frame-inner-wrap:last-child{
  margin-bottom: 30rpx;
+}
+.attendance-wrap{
+  display: flex;
+}
+.attendance-item{
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+}
+.attendance-up{
+  font-size: 24rpx;
+  color: #fff;
+}
+.attendance-down{
+  font-size: 26rpx;
+  color: #fff;
+  margin-top: 30rpx;
+}
+/*迟到状况  */
+.status{
+  padding:50rpx 30rpx; 
+}
+.status-titile{
+  -webkit-display: flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.spot{
+  width:15rpx;
+  height: 15rpx;
+  background-color:#f45f58;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+.status-content{
+  font-size: 26rpx;
+  color: #666;
+}
+.status-item{
+  font-size: 22rpx;
+  color: #999;
+  padding-left: 40rpx;
+  margin-top: 25rpx;
 }

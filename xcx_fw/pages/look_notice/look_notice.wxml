@@ -5,6 +5,7 @@
 </view>
 <!--main  -->
 <view class='main'>
+<view class='gd'></view>
   <view class='box-wrap' >
    <view class='time'>{{time}}</view>
    <view class='contents-wrap'>
