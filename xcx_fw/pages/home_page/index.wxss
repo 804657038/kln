@@ -48,6 +48,7 @@
     background-color: #fff;
     margin: 25rpx auto 40rpx;
     -moz-box-shadow:0px 0px 18px #e2e2e2; -webkit-box-shadow:0px 0px 18px #e2e2e2; box-shadow:0px 0px 18px #e2e2e2;
+    border-radius: 5px;
 
 }
 .contents-list:nth-child(1){

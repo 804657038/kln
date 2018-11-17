@@ -9,6 +9,7 @@ Page({
     distribution:'待分配',
     name:'sdaif',
     phone:'12345678912',
+    avatar:'http://i2.bvimg.com/650276/974d1dc7b66f557f.png'
   },
   // 切换头像
 

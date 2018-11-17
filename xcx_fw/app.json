@@ -1,41 +1,43 @@
 {
   "pages":[
+      "pages/clock/clock",
+      "pages/news/news",
+      "pages/egress/egress",
+      "pages/release/index",
+      "pages/travel/travel",
+      "pages/overtime/overtime",
+      "pages/application_decision/application_decision",
+      "pages/application_approval/application_approval",
+      "pages/login/index",
+      "pages/account/index",
+      "pages/set_up/index",
+      "pages/modify/index",
+      "pages/home_page/index",
+      "pages/new_notice/new_notice",
+      "pages/announcement/announcement",
+      "pages/record/record",
+      "pages/monthly/monthly",
+      "pages/weekly/weekly",
+      "pages/daily/daily",
+      "pages/application_leave/application_leave",
       "pages/leave/index",
       "pages/work/index",
       "pages/communication/communication",
-      "pages/application_approval/application_approval",
       "pages/personal_information/personal_information",
       "pages/Contacts/Contacts",
       "pages/company/company",
       "pages/advertisement_notice/advertisement_notice",
       "pages/look_notice/look_notice",
-      "pages/news/news",
-      "pages/clock/clock",
-      "pages/announcement/announcement",
       "pages/cost/cost",
-      "pages/application_decision/application_decision",
-      "pages/application_leave/application_leave",
-      "pages/monthly/monthly",
-      "pages/record/record",
-      "pages/overtime/overtime",
-      "pages/notice/notice",
       "pages/copy/copy",
       "pages/date/index",
       "pages/date_look/index",
-      "pages/daily/daily",
-      "pages/account/index",
       "pages/recipient/recipient",
       "pages/approvalt_submission/approvalt_submission",
       "pages/purchase/purchase",
-      "pages/egress/egress",
-      "pages/login/index",
-      "pages/index/index",
-      "pages/home_page/index",
-      "pages/weekly/weekly",
-      "pages/release/index",
-      "pages/set_up/index",
-      "pages/modify/index",
-      "pages/travel/travel"
+      "pages/index/index"
+    
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -74,13 +76,13 @@
           "text": "工作"
         },
         {
-          "pagePath": "pages/egress/egress",
+          "pagePath": "pages/home_page/index",
           "selectedIconPath": "images/e1.png",
           "iconPath": "images/e2.png",
           "text": "我的"
         }
         
       ]
-    },
-    "debug": true
+    }
+   
 }

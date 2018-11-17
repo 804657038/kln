@@ -30,10 +30,12 @@ Page({
     show:false,
     startYear: 2000,
     endYear: 2050,
-    dayss:"",
-    pic_ns:"http://i2.bvimg.com/650276/974d1dc7b66f557f.png"
-
+    days:"0",
+    pic_ns:"http://i2.bvimg.com/650276/974d1dc7b66f557f.png",
+    date1:'',
+    disabled:true
   },
+  // 选择类型
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
@@ -48,9 +50,17 @@ Page({
     var end_date = new Date(this.data.date2);
     var days = end_date.getTime() - start_date.getTime();
     var day = parseInt(days / (1000 * 60 * 60 * 24));
+    if (day < 0) {
+      day = 0;
+      wx.showToast({
+        title: '结束时间不能小于开始时间',
+        icon: "none",
+        duration:2000
+      })
+    }
     this.setData({
       date1: e.detail.value,
-      dayss: day
+      days: day
     })
   },
   // 结束时间
@@ -59,11 +69,37 @@ Page({
     var end_date = new Date(e.detail.value);
     var days = end_date.getTime() - start_date.getTime();
     var day = parseInt(days / (1000 * 60 * 60 * 24));
+    if(day<0){
+       day=0;
+       wx.showToast({
+         title: '结束时间不能小于开始时间',
+         icon:"none",
+         duration: 2000
+       })
+    }
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       date2: e.detail.value,
-      dayss: day
+      days: day
     })
+  },
+  //开始时间未选择，则结束时间不能选
+  Set_out:function(){
+
+     if(this.data.date1 == ""){
+         wx.showToast({
+           title: '请选择开始时间',
+           icon:'none',
+           duration: 1000
+         })
+     }
+  },
+  //开始时间选择，则结束时间能选
+  Ope_out: function () {
+    console.log(1)
+     this.setData({
+       disabled:false,
+     })
   },
 
   /** 选择图片 */

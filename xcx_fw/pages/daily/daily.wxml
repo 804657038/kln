@@ -7,7 +7,7 @@
 
   <!--分隔层  -->
    <view class="section section-fg">
-  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="今日工作" />
    </view>
   <!--分隔层  -->
    <view class="section section-fg">

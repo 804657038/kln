@@ -212,3 +212,8 @@
 .border_none{
   border:none
 }
+.position-right{
+  position: absolute;
+  right: 5rpx;
+  color: #999;
+}

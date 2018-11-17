@@ -64,3 +64,25 @@
   color:#999;
   padding: 0 30rpx;
 }
+.box{
+   display: flex;
+    align-items: center;
+    justify-content:space-between;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    -webkit-justify-content:space-between;
+}
+.icon-youjian-x{
+  font-size: 36rpx;
+  color: #c9c9c9
+}
+.btn{
+  position: absolute;
+  bottom:60rpx;
+  width: 100%;
+  background-color: #00a6a0;
+  color: #fff;
+  border:none;
+  border-radius: 0;
+  font-size: 26rpx;
+}

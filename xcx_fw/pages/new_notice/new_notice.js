@@ -1,32 +1,19 @@
 
 Page({
   data: {
-    array: ['应酬费', '交通费', '年假', '差旅', '其他'],
-    array1: ['事假', '病假', '年假', '调休假', '婚假'],
+
     imgArr: [],
     chooseViewShow: true,
     show: false,
-    time: '12:00',
+    time: '无',
     days: "0",
     pic_ns: "http://i2.bvimg.com/650276/974d1dc7b66f557f.png"
 
   },
-  bindPickerChange: function (e) {
+  bindTimeChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index: e.detail.value
-    })
-  },
-  bindPickerChange1: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index1: e.detail.value
-    })
-  },
-  bindDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      date: e.detail.value
+      time: e.detail.value
     })
   },
   sc: function () {

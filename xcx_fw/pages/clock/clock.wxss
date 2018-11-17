@@ -38,7 +38,7 @@
     justify-content: center;
     -webkit-display: flex;
      -webkit-justify-content: center;
-    padding-top: 200rpx;
+    padding-top: 20%;
 }
 .clock-wrap{
   width: 360rpx;
@@ -98,7 +98,7 @@
 }
 .positions-wrap{
   position: fixed;
-  bottom:280rpx;
+  bottom:10%;
 }
 .positions-up{
   color: #fff;

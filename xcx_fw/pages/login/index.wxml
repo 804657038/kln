@@ -26,7 +26,7 @@
    </view>
   <!--选择协议  -->
   <view class='agree'>
-      <label><checkbox class='sz' value="checkbox1"/></label><view class='wz'>我同意《鸿基资盈宝职员使用协议》</view>
+      <label><checkbox class='sz' checked='checked' value="checkbox1"/></label><view class='wz'>我同意《鸿基资盈宝职员使用协议》</view>
   </view>
 
 

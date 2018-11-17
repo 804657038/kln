@@ -1,17 +1,22 @@
   <view class='nav-wrap'>
       <view class='iconfont icon-fanhui icon-left'></view>
       <view class='nav-mid'>设置</view>
-      <view class='icon-right'>保存</view>
+      <view class='icon-right'></view>
 </view>
    <!--修改名片  -->
 <view class='mian'>
    <view class='Set-wrap'>
        <view>账号</view>
+       <view class='box'>
        <view>{{numbers}}</view>
+       <view class='iconfont icon-youjian icon-youjian-x'></view>
+       </view>
    </view>
      <view class='Set-wrap'>
        <view>我的企业</view>
        <view>{{companys}}</view>
    </view>
-
+  
+  <!--退出登录  -->
+    <button class='btn'>退出登录</button>
 </view>

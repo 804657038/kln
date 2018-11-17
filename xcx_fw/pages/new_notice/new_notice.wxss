@@ -192,3 +192,39 @@
   color: #ccc;
 }
 
+.picker_custom {
+width:90%;
+height:100rpx;
+background-color:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+-webkit-display:flex;
+-webkit-align-items:center;
+-webkit-justify-content:space-between;
+color:#555555;
+font-size:26rpx;
+border-bottom:1px solid #e8e8e8;
+margin:0 auto;
+padding-right:45rpx;
+box-sizing:border-box;
+position:relative;
+}
+.icon-youjian-x{
+position:absolute;
+right:0;
+color:#ccc;
+}
+.main-section{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.btn{
+  position: fixed;
+  left: 5%;
+  bottom:60rpx;
+  width: 90%;
+  background-color: #00a6a0;
+  color: #fff;
+}
