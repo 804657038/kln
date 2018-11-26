@@ -1,0 +1,84 @@
+@import "../../utils/font.wxss";
+page{
+  background-color:#fafafa;
+}
+.mt_service-box{
+  display: flex;
+  align-items: center;
+ -webkit-display: flex;
+ -webkit-align-items: center;
+ background-color: #fff;
+ padding: 30rpx;
+ box-sizing: border-box;
+ position: relative;
+
+} 
+.logo{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.mid{
+  padding-left: 30rpx;
+}
+.mid-p{
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 10rpx;
+}
+.mid-p_s{
+  font-size: 24rpx;
+  color: #888888;
+}
+.timers{
+ position: absolute;
+ top:30rpx;
+ right: 30rpx;
+ font-size: 24rpx;
+ color: #bbb;
+}
+.lofo_wrap{
+  position: relative;
+}
+.num_box{
+  position: absolute;
+  right: 0;
+  top:0;
+  border-radius: 50%;
+  background-color: #c9ab79;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  color: #fff;
+}
+
+/*暂无消息  */
+.no-news{
+  width: 100%;
+  position: fixed;
+  top:0;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-display: flex;
+   padding-top: 45%;
+}
+.no-img{
+  width: 160rpx;
+  height: 155rpx;
+ 
+}
+.no-wz{
+  font-size: 28rpx;
+  color: #333333;
+  text-align: center;
+  margin-top: 40rpx;
+}

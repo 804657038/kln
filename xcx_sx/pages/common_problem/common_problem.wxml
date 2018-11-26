@@ -1,0 +1,14 @@
+<view class='mian'>
+  <view class='wrap' wx:for="{{arrty}}" wx:for-item="item" >
+    <view class='header' id="{{item.id}}" bindtap='Open'>
+      <view class='header-p'>{{item.header}}</view>
+       <view class='iconfont icon-shang {{uhide ==item.id?"icon_s1":"icon_s2"}}'></view>
+    </view>
+    <view class='contents-wrap {{uhide==item.id?"":"show_x"}}'>
+     <view class='contents' wx:for="{{item.arrcon}}" wx:for-item="ground">
+        <view class='contents-inner'>{{ground.inner_p1}}</view>
+        <view class='contents-inner'>{{ground.inner_p2}}</view>
+     </view>
+    </view>
+    </view>
+</view>

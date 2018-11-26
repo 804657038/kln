@@ -1,0 +1,43 @@
+<view class='mian-wrap'>
+<view class='main'>
+  <view class='header-wrap'>
+    <image class='shop_img' src='{{pic}}'></image>
+    <view class='shop-mid'>
+       <view class='shop-mid-p'>{{beib}}</view>
+       <view class='shop-mid-p'>{{picer}}</view>
+    </view>
+    <view class='iconfont icon-cuo1 icon-cuo1-x'></view>
+  </view>
+  <!--颜色  -->
+  <view class='color_title'>颜色</view>
+ <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" color='{{item.colors}}' checked="{{item.checked}}"/>
+  </label>
+</radio-group>
+<!--尺寸  -->
+  <view class='size_title'>尺寸</view>
+  <view class='size-list'>
+    <view  bindtap='select_size' id="{{item.id}}"  class='size-item {{item.bg_colors}}' wx:for="{{arrty}}">{{item.size_name}}</view>
+  </view>
+<!--属性  -->
+  <view class='attribute_title'>属性</view>
+  <view class='attribute-list'>
+    <view bindtap='select_attribute' id="{{item.id}}" class='attribute-item {{item.bg_colors}}' wx:for="{{attributes}}">{{item.name}}         </view>
+  </view>
+  <!--数量  -->
+  <view class='nums-list'>
+    <view class='nums-sz'>数量</view>
+    <view class='nums-wrap'>
+      <view class='nums-jian' bindtap='jian'>-</view>
+      <input class='input_class' value='{{nums}}'></input>
+      <view class='nums-jia' bindtap='jia'>+</view>
+    </view>
+  </view>
+
+</view>
+
+  <!--确定  -->
+  <view class='qe-di'>确定</view>
+
+</view>

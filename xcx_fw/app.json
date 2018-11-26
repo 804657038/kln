@@ -1,5 +1,9 @@
 {
   "pages":[
+      "pages/communication/communication",
+      "pages/home_page/index",
+    
+      "pages/work/index",
       "pages/clock/clock",
       "pages/news/news",
       "pages/egress/egress",
@@ -12,7 +16,6 @@
       "pages/account/index",
       "pages/set_up/index",
       "pages/modify/index",
-      "pages/home_page/index",
       "pages/new_notice/new_notice",
       "pages/announcement/announcement",
       "pages/record/record",
@@ -21,8 +24,6 @@
       "pages/daily/daily",
       "pages/application_leave/application_leave",
       "pages/leave/index",
-      "pages/work/index",
-      "pages/communication/communication",
       "pages/personal_information/personal_information",
       "pages/Contacts/Contacts",
       "pages/company/company",

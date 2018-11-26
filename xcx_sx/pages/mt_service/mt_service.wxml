@@ -1,0 +1,23 @@
+<view class='mt_service'>
+  <view class='mt_service-box' wx:for="{{arrty}}"  wx:for-item="item">
+    <view class='lofo_wrap'>
+     <view class='num_box'>
+        {{item.nums}}
+     </view>
+       <image class='logo' src='{{item.pic}}'></image>
+    </view>
+    <view class='mid'>
+      <view class='mid-p'>{{item.call}}</view>
+      <view class='mid-p mid-p_s'>{{item.news}}</view>
+    </view>
+    <view class='timers'>{{item.time}}</view>
+  </view>
+</view>
+
+<!--暂无消息  -->
+  <view class='no-news'>
+    <view >
+      <image class='no-img' src='{{img_s}}'></image>
+      <view class='no-wz'>暂无消息</view>
+    </view>
+  </view>

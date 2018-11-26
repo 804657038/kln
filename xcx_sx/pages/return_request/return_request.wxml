@@ -1,0 +1,28 @@
+
+<view class="section section_s">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" class='input_s' >
+      <view class='iconfont icon-shang icon-shang-x'></view>
+  {{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="section section_s">
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+    <view class="picker" class='input_s' >
+      <view class='iconfont icon-shang icon-shang-x'></view>
+  {{array1[index1]}}
+    </view>
+  </picker>
+</view>
+<view class="section section_s">
+  <textarea class='textarea_s' placeholder-class='placeholder_s' placeholder="问题说明" />
+</view>
+
+
+<!--取消 确定  -->
+
+ <view class='btn'>
+   <view class='btn-box'>取消</view>
+   <view class='btn-box btn-box-current'>确认</view>
+ </view>

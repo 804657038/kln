@@ -1,0 +1,83 @@
+<!--失效  -->
+        <checkbox-group bindchange='radio_s'>
+<view class='header-wrap'>
+ <view class='header-left'>
+    <view class='header-box-s'>商品收藏_</view>
+    <view class='header-box'>{{Invalid}}</view>
+ </view>
+ <view class='header-right' bindtap='edit'>
+   <view class='edit_s'>{{edit_s}}</view>
+   <view class='iconfont icon-you'></view>
+ </view>
+</view>
+    <view style='height:110rpx'></view>
+<!--暂无  -->
+ <view class='no_time_wrap' wx:if="{{show}}">
+    <view class='no_time'>
+       <image class='no_time_img' src='{{pic}}'></image>
+       <view class='no_time_wz'>暂无收藏</view>
+    </view>
+ </view>
+ <!--标题  -->
+   <view class='tiele-wrap'>
+     <view class='tiele-hx'></view>
+     <view class='tiele-mid'>{{recommend}}</view>
+     <view class='tiele-hx'></view>
+   </view>
+
+    <!--其他  -->
+
+    <view class='more-wrap'>
+      <view class='more-list'>
+        <view class='more-item' wx:for="{{more_arr}}" wx:for-item="mores">
+              <label class="checkbox"  >
+          <view class='more-up'>
+           <image class='more-up-img' src='{{mores.more_up_img}}'></image>
+             <view class='add_dete'>
+
+               <!--删除  -->
+              <view wx:if="{{shut}}" >
+                <checkbox value="{{mores.isbn}}" checked="{{mores.checked}}" hidden='hidden' />
+                <icon type="circle" size="23" color="{{items}}" color="{{item}}" wx:if="{{!mores.checked}}"></icon>
+                <icon type="success" size="23"  color="{{item}}"wx:if="{{mores.checked}}"></icon>
+              </view>
+  
+
+
+
+
+            </view>
+          </view>
+          <view class='more-mid'>{{mores.more_wz}}</view>
+          <view class='more-down'>{{mores.more_price}}</view>
+               </label>
+
+
+        </view>
+      </view>
+
+    </view>
+        
+    <view style='height:110rpx'></view>
+
+    <!--删除-加入购物车  -->
+    <view class='suspension' wx:if="{{suspension}}">
+      <view class='suspension-box suspension-box-current' bindtap='delete_s' >删除</view>
+    </view>
+          </checkbox-group>
+
+      <!--弹窗  -->
+              <view class='mask' wx:if="{{mask_show}}">
+                <view class='mask-box'>
+                  <view class="section">
+                    <view class='input_s'>确认删除?</view>
+                    <view class='btn-wrap'>
+                      <view class='btn-left' bindtap='cancel1'>取消</view>
+                      <view class='btn-left btn-left-currnt'  bindtap='close1'>确定</view>
+                    </view>
+                  </view>
+                  <view class='cuo'>
+                    <view class='iconfont icon-cuo icon-cuo-x'  bindtap='cancel1'></view>
+                  </view>
+                </view>
+              </view>

@@ -1,0 +1,36 @@
+@import "../../utils/font.wxss";
+page{
+  background-color: #fafafa;
+}
+.wrap{
+  background-color: #fff;
+  margin-bottom: 10rpx;
+}
+.header-time-wrap{
+  display: flex;
+  justify-content: center;
+  padding: 60rpx 0;
+}
+.header-time{
+  font-size: 24rpx;
+  color: #999999;
+  padding: 15rpx 25rpx;
+  background-color: #eeeeee;
+  display: inline-block;
+  margin: 0 auto;
+}
+.box{
+  padding:0 40rpx;
+}
+.trans-operation-wrapper{
+  font-size: 32rpx;
+  color: #c9ab79;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30rpx;
+}
+.content{
+  font-size: 28rpx;
+  color: #333;
+  padding-top: 40rpx;
+  padding-bottom: 90rpx;
+}

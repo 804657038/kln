@@ -16,7 +16,7 @@ Page({
       }, {
         mode: 'scaleToFill',
         text: '外出',
-        pic:'http://i1.bvimg.com/650276/3f08372be002da58.png',
+        pic:'http://i2.bvimg.com/650276/3f08372be002da58.png',
     }, {
       mode: 'scaleToFill',
       text: '采购',

@@ -21,7 +21,7 @@
       </view>
    </view>
    <view class='upload' >
-       <image bindtap="choose" class='upload-img' src="{{avatar}}"></image>
+       <image bindtap="choose" class='upload-img' src="{{avatar_s}}"></image>
    </view>
    </view>
    <!--设置  -->

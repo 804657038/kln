@@ -1,0 +1,131 @@
+@import "../../utils/font.wxss";
+.header-box-wrap{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.header-box{
+  background-color: #333333;
+  height: 280rpx;
+  border-radius: 3px;
+  padding:0 40rpx;
+  position: relative;
+}
+.header-one{
+  display: flex;
+  -webkit-display: flex;
+  padding-top:60rpx;
+}
+.header-one-left{
+  font-size: 28rpx;
+  color: #fff;
+  margin-right: 170rpx;
+}
+.header-one-right{
+  font-size: 28rpx;
+  color: #fff;
+  
+}
+.header-two{
+  font-size: 28rpx;
+  color: #fff;
+  padding-top: 30rpx;
+}
+.more{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width: 180rpx;
+  height: 70rpx;
+  border-top-left-radius: 5rpx;
+  border-top-right-radius: 5rpx;
+  background-color:#c9ab79;
+  display: flex;
+  -webkit-display: flex; 
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.more-add{
+  font-size: 26rpx;
+  color: #333333;
+}
+.header-box-wrap_s{
+  background-color: #fff;
+}
+/*卡片式  */
+.header-box-wrap_s{
+  background-color: #fff;
+  height: 330rpx;
+  border-radius: 3px;
+  padding:0 40rpx;
+  position: relative;
+  border:1px solid #eee
+}
+.header-one_s{
+  display: flex;
+  -webkit-display: flex;
+  padding-top:60rpx;
+}
+.header-one-left_s{
+  font-size: 28rpx;
+  color: #333;
+  margin-right: 170rpx;
+}
+.header-one-right_s{
+  font-size: 28rpx;
+  color: #333;
+  
+}
+.header-two_s{
+  font-size: 28rpx;
+  color: #333;
+  padding-top: 30rpx;
+}
+.fooder{
+  display: flex;
+  -webkit-display: flex; 
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 100rpx;
+  border-top:1px solid #eee;
+  margin-top: 20rpx;
+}
+.fooder-left{
+  display: flex;
+  -webkit-display: flex; 
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.checkboxs{
+  display: flex;
+  -webkit-display: flex; 
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.se{
+  font-size: 26rpx;
+  color: 666;
+  margin-left: 10rpx;
+}
+.fooder-right{
+   display: flex;
+  -webkit-display: flex; 
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.icon-bianji-x{
+ color: #c9ab79;
+ margin-right:50rpx;
+}
+.icon-laji-x{
+ color: #c9ab79;
+}

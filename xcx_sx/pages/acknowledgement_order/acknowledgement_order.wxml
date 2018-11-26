@@ -1,0 +1,61 @@
+<view class='wrap'>
+  <view class='header'>
+    <view class='header-left'>收货地址</view>
+    <view class='iconfont icon-xie icon-xie-x'></view>
+  </view>
+<!--main  -->
+   <view class='main'>
+     <view class='inner-wrap'>
+       <view class='inner-one'>
+         <view class='inner-one-left'>{{inner_name}}</view>
+         <view class='inner-one-right'>{{inner_phone}}</view>
+       </view>
+       <view class='inner-down'>{{inner_adds}}</view>
+     </view>
+   </view>
+</view>
+<!--contents  -->
+<view class='goods_wrap'>
+  <view class='goods' wx:for="{{arrty}}" wx:for-item="item">
+   <image class='goods-pic' src='{{item.pic}}'></image>
+   <view class='goods-mid'>
+     <view class='goods-mid-ne'>{{item.ne}}</view>
+     <view class='goods-mid-money'>{{item.money}}</view>
+   </view>
+   <view class='goods-right'><view>{{item.goods_nums}}</view></view>
+ </view>
+</view> 
+<!--list  -->
+<view class='list-wrap'>
+  <view class='list' wx:for="{{list_rap}}" wx:for-item="ground">
+    <view class='list-left'>{{ground.list_name}}</view>
+    <view class='list-right'>{{ground.list_nums}}</view>
+  </view>
+</view>
+
+<!--底部悬浮  -->
+<view class='go-ls'>
+  <view class='go-price'><view class="total">总计：</view><view class="money">¥1606.00</view></view>
+  <view class='go-btn' bindtap='go_fk'>去付款</view>
+</view>
+
+<!--选择支付  -->
+<view class='mask-wrap {{tianjia}}'>
+ <view class='mask-close' bindtap='close_mask'></view>
+  <view class='mask'>
+    <view class='select-mask-header'>请选择支付方式</view>
+     <view class='select-list'>
+      <radio-group class="radio-group">
+       <view class='select-item' wx:for="{{select_type}}" wx:for-item="types">
+          <label class='position-radio'>
+           <radio value="{{types.name}}" color='{{colors}}' wx:key="name"  checked="{{types.checked}}"/>
+          </label>
+         <image class='pic_mask' src='{{types.pic}}'></image>
+         <view class='type_name'>{{types.name_mask}}</view>
+       </view>
+      </radio-group>
+
+     </view>
+    </view>
+
+</view>

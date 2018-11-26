@@ -1,0 +1,15 @@
+<!-- banner   -->
+<view class='banner-wrap'>
+  <image class='banner' src='{{pic}}'></image>
+</view>
+
+    <!--其他  -->
+    <view class='more-wrap'>
+      <view class='more-list'>
+        <view class='more-item' wx:for="{{more_arr}}" wx:for-item="mores">
+          <view class='more-up'><image class='more-up-img' src='{{mores.more_up_img}}'></image></view>
+          <view class='more-mid'>{{mores.more_wz}}</view>
+          <view class='more-down'>{{mores.more_price}}</view>
+        </view>
+      </view>
+    </view>

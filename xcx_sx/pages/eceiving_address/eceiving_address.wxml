@@ -1,0 +1,32 @@
+<view class="section section_s">
+  <input placeholder="收件人姓名" class='input_s' placeholder-class='placeholder_s' auto-focus/>
+</view>
+<view class="section section_s">
+  <input placeholder="联系方式" class='input_s' placeholder-class='placeholder_s' auto-focus/>
+</view>
+<view class="section section_s">
+  <picker mode="region" bindchange="bindRegionChange"  value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker" class='input_s' >
+      <view class='iconfont icon-shang icon-shang-x'></view>
+    {{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class="section section_s">
+  <textarea class='textarea_s' placeholder-class='placeholder_s' placeholder="详细地址" />
+</view>
+
+      <view class='checkbox-wrap'>
+        <label class="checkbox" bindtap='click_s'>
+          <checkbox value="{{isbn}}" checked="{{checked}}" hidden='hidden' />
+          <icon type="circle" size="23" color="{{item}}" wx:if="{{!checked}}"></icon>
+          <icon type="success" size="23"  color="{{item}}"wx:if="{{checked}}"></icon>
+        </label>
+        <view class='adds_s'>     {{adds}}</view>
+</view>
+<!--取消 确定  -->
+
+ <view class='btn'>
+   <view class='btn-box'>取消</view>
+   <view class='btn-box btn-box-current'>确认</view>
+ </view>

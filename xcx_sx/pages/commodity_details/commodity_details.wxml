@@ -1,0 +1,38 @@
+  <!--banner  -->
+    <view class="page-section-spacing swiper">
+    <!--点赞  -->
+    <view class='position-dz' bindtap='xin'>
+      <view class='iconfont icon-shoucang1 icon-shoucang1-x {{states}}'></view>
+    </view>
+    <!--轮播  -->
+      <swiper
+         indicator-active-color="{{colors}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <image class='banner-img' src='{{pic}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+<!--品牌限量  -->
+  <view class='brand-wrap'>
+    <view class='brand-left'>{{titles}}</view>
+    <view class='brand-right'>
+     <image class='logo-brand' src='{{logo_brand}}' />
+     <view class='country'>{{country}}</view>
+    </view>
+  </view>
+    <!--更多推荐  -->
+    <view class='more-wrap'>
+      <view class='more-header'>更多推荐</view>
+      <view class='more-list'>
+        <view class='more-item' wx:for="{{more_arr}}" wx:for-item="mores">
+          <view class='more-up'><image class='more-up-img' src='{{mores.more_up_img}}'></image></view>
+          <view class='more-mid'>{{mores.more_wz}}</view>
+          <view class='more-down'>{{mores.more_price}}</view>
+        </view>
+      </view>
+    </view>

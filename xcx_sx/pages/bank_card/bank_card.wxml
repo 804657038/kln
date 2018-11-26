@@ -1,0 +1,25 @@
+<view class='wrap'>
+  <view class='header'>
+    请添加 <view class='inner'>您本人</view> 的银行卡
+  </view>
+ <view class="section section_s">
+  <input placeholder="请输入银行卡" placeholder-class='placeholder_s' class='input_s' auto-focus/>
+ </view>
+   <view class='header header_s'>
+    提醒：后续只能绑定该持卡人的银行卡。
+  </view>
+ <view class="section section_s">
+  <input placeholder="持卡人姓名" placeholder-class='placeholder_s' class='input_s' auto-focus/>
+ </view>
+  <view class="section section_s">
+  <input type="idcard" placeholder="持卡人身份证号" placeholder-class='placeholder_s' class='input_s' auto-focus/>
+ </view>
+  <view class="section section_s">
+  <input type="number" placeholder="银行预留手机号" placeholder-class='placeholder_s' class='input_s' auto-focus/>
+ </view>
+</view>
+
+ <view class='btn'>
+   <view class='btn-box'>取消</view>
+   <view class='btn-box btn-box-current'>确定</view>
+ </view>

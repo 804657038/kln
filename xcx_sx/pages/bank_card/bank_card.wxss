@@ -1,0 +1,59 @@
+@import "../../utils/font.wxss";
+.inner{
+  display: inline-block;
+  font-size: 40rpx;
+  color: #c9ab79;
+}
+.wrap{
+  padding: 0 30rpx;
+}
+.header{
+  padding: 40rpx 0;
+  font-size: 32rpx;
+  color: #333333;
+}
+.header_s{
+  font-size: 28rpx;
+}
+.section_s{
+  margin-bottom: 20rpx;
+}
+.input_s{
+  font-size: 28rpx;
+  color: #bbbbbb;
+  height: 100rpx;
+  border:1px solid #ddd;
+  padding-left: 40rpx;
+  border-radius: 5rpx;
+}
+.placeholder_s{
+  color: #bbbbbb;
+}
+
+/*确定  */
+.btn{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  position: absolute;
+  bottom:-1rpx;
+  width: 100%;
+  border:1px solid #f6f6f6;
+}
+.btn-box{
+  width: 50%;
+  height: 110rpx;
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  font-size: 32rpx;
+  color: #c9ab79;
+}
+.btn-box-current{
+  background-color:#c9ab79;
+  color: #fff;
+}

@@ -1,0 +1,13 @@
+  <view class='wrap' wx:for="{{arrty}}" wx:for-item="item"> 
+    <view class='header-time-wrap'>
+    <view class='header-time'>
+        {{item.time}}
+    </view>
+    </view>
+    <view class='box'>
+      <view class='trans-operation-wrapper'>
+         {{item.operation}}
+      </view>
+      <view class='content'>{{item.inner}}</view>
+    </view>
+  </view>

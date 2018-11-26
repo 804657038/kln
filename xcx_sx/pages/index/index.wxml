@@ -1,0 +1,84 @@
+  <!--搜索  -->
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input weui-cell_input-x">
+          <view class='iconfont icon-sousuo icon-sousuo-x'></view>
+        <input class="weui-input" auto-focus placeholder="请输入商品名称或关键词"/>
+      </view>
+    </view>
+  </view>
+  <!--banner  -->
+    <view class="page-section-spacing swiper">
+      <swiper
+         indicator-active-color="{{colors}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <image class='banner-img' src='{{pic}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--背包list  -->
+    <view class='select-list' >
+      <view class='select-item' wx:for="{{arrty}}" wx:for-item="ground">
+            <view class='inner-up'><image class='inner-up-img' src='{{ground.pic_bb}}'></image></view>
+            <view class='inner-down'>{{ground.wz_bb}}</view>
+      </view>
+    </view>
+    <!--轮播1  -->
+    <view class='broadcast-mid'>
+      <view class='broadcast-header'>皮质包</view>
+       <swiper class='broadcast-swiper'
+        indicator-dots="{{indicatorDots}}"  indicator-active-color="{{colors}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item broadcast-swiper-item {{item}}">
+              <view class='knapsack-wrap' wx:for="{{knapsack}}" wx:for-item="knapsacks">
+                <view class='knapsack-up'><image class='knapsack-up-img' src='{{knapsacks.bb_img}}'></image></view>
+                <view class='knapsack-mid'>{{knapsacks.bb_names}}</view>
+                <view class='knapsack-down'>{{knapsacks.bb_price}}</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+        <!--轮播2  -->
+    <view class='broadcast-mid'>
+      <view class='broadcast-header'>品牌推荐</view>
+       <swiper class='broadcast-swiper broadcast-swiper2'
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" indicator-active-color="{{colors}}" duration="{{duration}}"  next-margin="{{nextMargin}}rpx">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item broadcast2-swiper {{item}}">
+               <image class='banner-img-two' src='{{pic}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--专题活动  -->
+    <view class='special-wrap'>
+      <view class='special-header'>专题活动</view>
+      <view class='special-inner'>
+        <image class='special-inner-img' src='{{special_img}}'></image>
+        <image class='special-inner-img' src='{{special_img}}'></image>
+        <image class='special-inner-img' src='{{special_img}}'></image>
+      </view>
+    </view>
+    <!--更多推荐  -->
+    <view class='more-wrap'>
+      <view class='more-header'>更多推荐</view>
+      <view class='more-list'>
+        <view class='more-item' wx:for="{{more_arr}}" wx:for-item="mores">
+          <view class='more-up'><image class='more-up-img' src='{{mores.more_up_img}}'></image></view>
+          <view class='more-mid'>{{mores.more_wz}}</view>
+          <view class='more-down'>{{mores.more_price}}</view>
+        </view>
+      </view>
+    </view>

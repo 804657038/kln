@@ -1,0 +1,39 @@
+<view class='header-box-wrap'>
+  <view class='header-box'>
+    <view class='header-one'>
+      <view class='header-one-left'>{{name}}</view>
+      <view class='header-one-right'>{{phone}}</view>
+    </view>
+    <view class='header-two'>{{adds}}</view>
+    <view class='more'>
+       <view class='more-add'>{{add_more}}</view>
+    </view>
+  </view>
+  </view>
+
+<!--卡片式  -->
+<view class='header-box-wrap' wx:for="{{arrty}}" wx:for-item="ground">
+  <view class='header-box-wrap_s'>
+    <view class='header-one_s'>
+      <view class='header-one-left_s'>{{ground.name_s}}</view>
+      <view class='header-one-right_s'>{{ground.phone_s}}</view>
+    </view>
+    <view class='header-two_s'>{{ground.adds_s}}</view>
+    <view class='fooder'>
+       <view class='fooder-left'>
+               <checkbox-group   bindchange="checkbox_s"  >
+              <label class='checkboxs' >
+                <checkbox value='{{ground.inse}}' checked="{{ground.checked}}" hidden='hidden' />
+                <icon type="circle" size="23" color="{{item}}" wx:if="{{!ground.checked}}"></icon>
+                <icon type="success" size="23"  color="{{item}}"wx:if="{{ground.checked}}"></icon>
+              </label>
+                </checkbox-group>
+         <view class='se'>设置默认地址</view>
+       </view>
+       <view class='fooder-right'>
+         <view class='iconfont icon-bianji icon-bianji-x'></view>
+          <view class='iconfont icon-laji icon-laji-x'></view>
+       </view>
+    </view>
+  </view>
+  </view>

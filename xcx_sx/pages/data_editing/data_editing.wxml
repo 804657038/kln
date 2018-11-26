@@ -1,0 +1,54 @@
+
+<!--上传  -->
+<view class='list-wrap'>
+  <view class='list-left'>{{portrait}}</view>
+    <view class='list-right'>
+      <image class='list-upload' bindtap='upload' src='{{pic}}'></image>
+      <view class='iconfont icon-you icon-you-x'></view>
+    </view>
+</view>
+<!--修改  -->
+<view class='list-wrap list-wrap_s' bindtap='OPen1'>
+  <view class='list-left'>{{name}}</view>
+    <view class='list-right'>
+      {{name_input1}}
+    </view>
+</view>
+<!--修改  -->
+<view class='list-wrap list-wrap_s'  bindtap='OPen2'>
+  <view class='list-left'>{{autograph}}</view>
+    <view class='list-right'>
+      {{name_input2}}
+    </view>
+</view>
+
+<!--弹窗  -->
+<view class='mask' wx:if="{{show1}}">
+   <view class='mask-box'>
+     <view class="section">
+      <input  bindinput="bindKeyInput1" class='input_s' auto-focus/>
+      <view class='btn-wrap'>
+        <view class='btn-left' bindtap='cancel1'>取消</view>
+        <view class='btn-left btn-left-currnt'  bindtap='close1'>确定</view>
+      </view>
+     </view>
+     <view class='cuo'>
+       <view class='iconfont icon-cuo icon-cuo-x'  bindtap='cancel1'></view>
+     </view>
+   </view>
+</view>
+<!--弹窗  -->
+<view class='mask' wx:if="{{show2}}">
+   <view class='mask-box'>
+     <view class="section">
+      <input bindinput="bindKeyInput2" class='input_s' auto-focus/>
+      <view class='btn-wrap'>
+        <view class='btn-left' bindtap='cancel2'>取消</view>
+        <view class='btn-left btn-left-currnt'  bindtap='close2'>确定</view>
+      </view>
+     </view>
+     <view class='cuo'>
+       <view class='iconfont icon-cuo icon-cuo-x'  bindtap='cancel2'></view>
+     </view>
+   </view>
+</view>

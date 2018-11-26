@@ -1,0 +1,43 @@
+@import "../../utils/font.wxss";
+/*banner  */
+.banner{
+  width: 100%;
+  height: 320rpx;
+}
+
+/*其他  */
+.more-header{
+  text-align: center;
+  padding: 90rpx 0 0 0;
+}
+.more-list{
+  display: flex;
+  -webkit-display: flex; 
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+}
+.more-item{
+  width: 50%;
+  margin: 80rpx 0;
+}
+.more-up{
+  display: flex;
+  -webkit-display: flex; 
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding-bottom:70rpx;
+}
+.more-up-img{
+  width: 290rpx;
+  height: 200rpx;
+}
+.more-mid{
+  text-align: center;
+  font-size: 28rpx;
+  color: #333333;
+}
+.more-down{
+  text-align: center;
+  font-size: 28rpx;
+  color: #999999;
+}

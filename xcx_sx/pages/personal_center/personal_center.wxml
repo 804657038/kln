@@ -1,0 +1,25 @@
+<view class='main'>
+<!--编辑用户  -->
+  <view class='personal_bg'>
+     <view class='personal_data'>
+       <image class='personal_pic' src='{{pic}}'></image>
+       <view class='personal_name'>
+         <view class='personal_name_left'>{{name}}</view>
+         <view class='iconfont icon-xie icon-xie_x'></view>
+       </view>
+       <view class='personality'>{{personality}}</view>
+     </view>
+  </view>
+  <!--排列 -->
+   <view class='order-list' >
+     <view class='order-item' wx:for="{{arrty}}" wx:for-item="item">
+        <image class='order-img' src='{{item.order_bb}}'></image>
+        <view class='bb_name'>{{item.bb_name}}</view>
+     </view>
+   </view>
+   <!--Exhibition列表  -->
+   <view class='exhibition-wrap' wx:for="{{exhibition}}" wx:for-item="groud">
+     <view class='exhibition-left'>{{groud.exhibition_name}}</view>
+     <view class='iconfont icon-you icon-you-x'></view>
+   </view>
+</view>
