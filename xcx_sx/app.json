@@ -1,8 +1,12 @@
 {
   "pages":[
+    "pages/to_be_evaluated/to_be_evaluated",
+    "pages/acknowledgement_order/acknowledgement_order",
+    "pages/asking_for_details/asking_for_details",
+    "pages/commodity_question/commodity_question",
+    "pages/commodity_evaluation/commodity_evaluation",
     "pages/commodity_details/commodity_details",
     "pages/shopping_adds/shopping_adds",
-    "pages/acknowledgement_order/acknowledgement_order",
     "pages/bank_card_list/bank_card_list",
     "pages/bank_card/bank_card",
     "pages/my_look_new/my_look_new",

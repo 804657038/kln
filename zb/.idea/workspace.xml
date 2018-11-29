@@ -4,7 +4,21 @@
     <bookmark url="file://$PROJECT_DIR$/../kln/css/index.css" description=".fill-gz{&#10;    -webkit-display: flex;&#10;    -webkit-j..." line="562" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dcd8789-129d-4ded-8e30-b40433ae67b3" name="默认" comment="" />
+    <list default="true" id="0dcd8789-129d-4ded-8e30-b40433ae67b3" name="默认" comment="">
+      <change afterPath="$PROJECT_DIR$/../htt/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htt/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htt/js/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htt/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/pages/acknowledgement_order/acknowledgement_order.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/pages/acknowledgement_order/acknowledgement_order.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.js" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/pages/commodity_details/commodity_details.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xcx_sx/utils/font.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../xcx_sx/utils/font.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -76,14 +90,33 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="805310561">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="486" column="41" selection-start-line="486" selection-start-column="41" selection-end-line="486" selection-end-column="41" />
+            <state relative-caret-position="-264">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -130,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="897">
               <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
@@ -176,6 +209,9 @@
       <find>.purchase</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/js/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -188,8 +224,8 @@
         <option value="$PROJECT_DIR$/css/mask.css" />
         <option value="$PROJECT_DIR$/js/function.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -205,6 +241,7 @@
     <option name="width" value="1143" />
     <option name="height" value="985" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -215,17 +252,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="直播抽奖" type="b2602c69:ProjectViewProjectNode" />
-              <item name="直播抽奖" type="462c0819:PsiDirectoryNode" />
+              <item name="zb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="直播抽奖" type="b2602c69:ProjectViewProjectNode" />
-              <item name="直播抽奖" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="直播抽奖" type="b2602c69:ProjectViewProjectNode" />
-              <item name="直播抽奖" type="462c0819:PsiDirectoryNode" />
+              <item name="zb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zb" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -238,7 +270,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/抽奖" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -294,11 +326,13 @@
       <workItem from="1541211158963" duration="15651000" />
       <workItem from="1541232466553" duration="2583000" />
       <workItem from="1541235119808" duration="234000" />
+      <workItem from="1543395014251" duration="1984000" />
+      <workItem from="1543476595370" duration="1717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64837000" />
+    <option name="totallyTimeSpent" value="68538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,6 +345,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10695469" />
       <window_info id="Structure" order="1" weight="0.24973656" />
@@ -341,7 +376,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$/../.." />
+      <path value="D:" />
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
@@ -414,6 +449,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/function.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -421,17 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="486" column="41" selection-start-line="486" selection-start-column="41" selection-end-line="486" selection-end-column="41" />
+        <state relative-caret-position="-264">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

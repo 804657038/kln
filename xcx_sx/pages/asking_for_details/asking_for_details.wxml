@@ -1,0 +1,31 @@
+
+<view class='ask'>
+  <view class='ask-l'>问</view>
+  <view class='ask-i'>{{ask}}</view>
+</view>
+ 
+  <view class='banner-wrap'>
+
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}rpx" next-margin="{{nextMargin}}rpx">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"  >
+            <view class='ask-wrap' wx:for="{{item.arrty}}">
+               <view class='swiper-item-ask'>
+                 <view class='swiper-item-ask-l'>{{item.ask}}</view>
+                 <view class='swiper-item-ask-r'>{{item.ask_inner}}</view>
+               </view>
+               <view class='swiper-item-ask-down'>{{item.ask_down}}</view>
+            </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  </view>
+<!--查看问题  -->
+<view class='question'>查看其它问题</view>

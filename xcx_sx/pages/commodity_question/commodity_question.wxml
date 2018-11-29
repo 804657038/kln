@@ -1,0 +1,35 @@
+<view class='sorting'>
+  <view class='sorting-item' wx:for="{{arrty}}">
+    {{item.sorting}}
+  </view>
+</view>
+<!--你问我答  -->
+<view class='wrap'>
+<!--我问  -->
+ <view class='my-ask-wrap'>
+   <view class='my-ask-tw'>
+     <view class='my-ask'>
+       <view class='ask'>问</view>
+        <view class='ask-inner'>{{word}}</view>
+     </view>
+     <view class='my-ask-whole'>{{whole}}</view>
+  </view>
+  <view class='list-answer'>
+    <view class='answer-item'>
+      <view class='answer'>答</view>
+      <view class='inner'>{{answer_inner}}</view>
+    </view>
+  </view>
+  <view class='above'>{{above}}</view>
+ </view>
+</view>
+
+<!--输入  -->
+  <view class='position-input'>
+    <view class="section section-s">
+      <input placeholder="请输入您的问题" class='input-s' auto-focus/>
+    </view>
+    <view class='right-s'>
+    <view class='iconfont icon-feiji icon-feiji-x'></view>
+    </view>
+  </view>

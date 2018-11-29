@@ -17,7 +17,7 @@
         </block>
       </swiper>
     </view>
-<!--品牌限量  -->
+    <!--品牌限量  -->
   <view class='brand-wrap'>
     <view class='brand-left'>{{titles}}</view>
     <view class='brand-right'>
@@ -25,14 +25,142 @@
      <view class='country'>{{country}}</view>
     </view>
   </view>
+    <view class='mian'>
+    <!--满多少  -->
+      <view class='sources'>{{source}}</view>
+        <view class='price-wrap'>
+         <view class='money-price'>{{money_price}}</view>
+         <view class='money-green'>{{money_full}}</view>
+         <view class='money-violet'>{{money_court}}</view>
+      </view>
+      <!--优惠劵领取  -->
+      <view class='discount-wrap'>
+        <view class='discount-nav' bindtap='discount_open'>
+          <view class='discount-nav-left'>优惠券领取</view>
+           <view class='iconfont icon-shang icon-shang-x {{down_row}}'></view>
+        </view>
+        <view class='discount-inner' wx:if="{{discount_show}}">
+          <view class='discount-item' wx:for="{{discount}}" wx:for-item="grouds">
+            <view class='discount-left'>
+              <view class='discount-left-p1'>{{grouds.money}}</view>
+              <view class='discount-left-p2'>{{grouds.full}}</view>
+            </view>
+            <view class='discount-right'>领取</view>
+          </view>
+        </view>
+      </view>
+      <!--文章  -->
+      <view class='region'>{{region}}</view>
+    </view>
+    <!--Advertisement  -->
+    <view class='advertisement-wrap'>
+      <view class='advertisement-inner' wx:for="{{advertisement}}" wx:for-item="wide">
+        <view class='iconfont icon-dui icon-dui-x'></view>
+        <view class='inner_s'>{{wide.name}}</view>
+      </view>
+    </view>
+    <!--商品评论  -->
+    <view class='comment-wrap'>
+     <view class='comment'>
+       <view class='comment-left'>{{comment}}</view>
+       <view class='comment-right'>全部</view>
+     </view>
+     <view class='classification-list' >
+       <view class='classification-item' wx:for="{{classification}}">{{item.classification_name}}</view>
+     </view>
+     <view class='user-wrap'>
+       <view class='user-inner' wx:for="{{users}}">
+         <view class='user-inner-up'>
+           <view class='user-inner-portrait'>
+             <image class='user-inner-pic' src='{{item.user_pic}}'></image>
+             <view class='user-inner-name'>{{item.name}}</view>
+           </view>
+           <view class='user-inner-time'>{{item.time}}</view>
+         </view>
+         <view class='user-inner-down'>{{item.wz}}</view>
+       </view>
+     </view>
+     </view>
+     <!--商品提问  -->
+      <view class='questions-wrap'>
+          <view class='comment'>
+          <view class='comment-left'>{{comment}}</view>
+          <view class='comment-right'>全部</view>
+        </view>
+        <view class='classification-list' >
+          <view class='classification-item' wx:for="{{classification}}">{{item.classification_name}}</view>
+        </view>
+        <view class='look-answer'>
+          <view class='answer-item' wx:for="{{answer}}">
+            <view class='answer-left'>{{item.name}}</view>
+            <view class='answer-right'>{{item.answer}}</view>
+          </view>
+        </view>
+      </view>
+      <!--细节  -->
+      <view class='details-wrap'>
+        <view class='details-header' bindtap='details_open'>
+          <view class='details-header-left'>细节</view>
+          <view class='iconfont icon-shang icon-shang-x {{details_down_row}}'></view>
+        </view>
+    <view class='details-wrap-down'wx:if="{{details_show}}">
+        <view class='details-p' wx:for="{{details_p}}">{{item.name}}</view>
+        <view class='details-img-wrap'>
+          <view class='details-img' wx:for="{{img_arr}}">
+            <image class='details-img-s' src='{{item.pic}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+<!--送货退货  -->
+      <view class='goods-wrap'>
+        <view class='details-header' bindtap='goods_open'>
+          <view class='details-header-left'>送货退货</view>
+          <view class='iconfont icon-shang icon-shang-x {{goods_down_row}}'></view>
+        </view>
+        <view class='goods-inner' wx:if="{{goods_show}}">
+          <view class='goods-item' wx:for="{{goods}}">{{item.name}}</view>
+        </view>
+      </view>
     <!--更多推荐  -->
     <view class='more-wrap'>
-      <view class='more-header'>更多推荐</view>
+      <view class='more-header'>
+        <view class='more-hx'></view>
+        <view class='more-wz'>商品推荐</view>
+        <view class='more-hx'></view>
+      </view>
       <view class='more-list'>
         <view class='more-item' wx:for="{{more_arr}}" wx:for-item="mores">
           <view class='more-up'><image class='more-up-img' src='{{mores.more_up_img}}'></image></view>
           <view class='more-mid'>{{mores.more_wz}}</view>
           <view class='more-down'>{{mores.more_price}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!--固定  -->
+    <view class='payment'>
+      <view class='payment-item'>
+          <view>
+        <view class='iconfont icon-fenxiang icon-fenxiang-x'></view>
+        <view class='payment-item-down'>分享</view>
+        </view>
+      </view>
+        <view class='payment-item'>
+           <view>
+        <view class='iconfont icon-kefu icon-fenxiang-x'></view>
+        <view class='payment-item-down'>客服</view>
+        </view>
+      </view>
+        <view class='payment-item'>
+           <view>
+        <view class='iconfont icon-gouwuche icon-fenxiang-x'></view>
+        <view class='payment-item-down'>加入购物车</view>
+        </view>
+      </view>
+        <view class='payment-item payment-item-r'>
+        <view>
+        <view class='payment-item-down'>去付款</view>
         </view>
       </view>
     </view>

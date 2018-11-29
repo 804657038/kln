@@ -1,0 +1,20 @@
+<!--nav  -->
+<view class="evaluate"  >
+  <view class='evaluate-item {{item.colors}}' wx:for="{{arrty}}">{{item.evaluate}}</view>
+</view>
+<!--评论  -->
+     <view class='user-wrap'>
+       <view class='user-inner' wx:for="{{users}}">
+         <view class='user-inner-up'>
+           <view class='user-inner-portrait'>
+             <image class='user-inner-pic' src='{{item.user_pic}}'></image>
+             <view class='user-inner-name'>{{item.name}}</view>
+           </view>
+           <view class='user-inner-time'>{{item.time}}</view>
+         </view>
+         <view class='user-inner-down'>{{item.wz}}</view>
+         <view class='user-pic' >
+           <image wx:for="{{item.arrty}}" wx:for-item="groud" class='user-pic-img' src='{{groud.pic}}'></image>
+         </view>
+       </view>
+     </view>

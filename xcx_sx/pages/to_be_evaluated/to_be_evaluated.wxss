@@ -7,23 +7,32 @@ page{
     padding:30rpx 50rpx 30rpx;
     background-color: #fff;
 }
-.header{
+.evaluated-wrap{
+  height: 220rpx;
+  background-color: #333;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-display: flex;
   -webkit-align-items: center;
-  -webkit-justify-content: space-between;
-  padding: 25rpx 0;
-  border-bottom: 1px solid #ddd;
- 
+  -webkit-justify-content: center;
 }
-.header-left{
-  font-size: 28rpx;
-  color: #333;
+.evaluated{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
 }
-.icon-xie-x{
+.icon-note1-x{
+  font-size: 50rpx;
   color: #c9ab79;
+}
+.evaluated-r{
+  font-size: 36rpx;
+  color: #ffffff;
+  margin-left: 10rpx;
 }
 /*main  */
 .inner-wrap{
@@ -92,6 +101,33 @@ page{
   display: flex;
   align-items:flex-end;
   height: 65px;
+}
+/*可使用优惠劵  */
+.picker-cusmot{
+  height: 110rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  padding:0 30rpx;
+  font-size: 26rpx;
+  position: relative;
+}
+.close{
+  display: none;
+}
+.icon-shang-x{
+  position: absolute;
+  right: 30rpx;
+  transform:rotate(180deg);
+}
+.plase-s{
+  font-size: 28rpx;
+  color: #333;
 }
 /*--list  */
 .list-wrap{
@@ -164,7 +200,7 @@ page{
   color: #c9ab79;
 }
 .mask-wrap{
-  position: fixed;
+  position:fixed;
   bottom:-10000rpx;
   background:rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -220,4 +256,28 @@ page{
 }
 .mask-close{
   height: 60%;
+}
+/*订单编号  */
+.order-wrap{
+  height: 300rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.order-inner{
+  display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  margin-bottom: 40rpx;
+}
+.order-inner-l{
+  font-size: 28rpx;
+  color: #888888;
+}
+.order-inner-r{
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 10rpx;
 }

@@ -1,0 +1,152 @@
+@import "../../utils/font.wxss";
+
+page{
+  background-color: #f6f6f6
+}
+.sorting{
+  display: flex;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 30rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+}
+.sorting-item{
+  padding: 15rpx 30rpx; 
+  border:1px solid #eee;
+  margin-right:20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 3px;
+  font-size: 26rpx;
+  color: #333333;
+}
+/*问答  */
+.wrap{
+  background-color: #fff;
+  padding: 0 30rpx;
+}
+.my-ask-tw{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content: space-between;
+   height: 110rpx;
+    border-bottom: 1px solid #eee;
+}
+.my-ask{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content: center;
+  
+}
+.ask{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 3px;
+  background-color: #79c9ab;
+  font-size: 24rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content:center;
+}
+.ask-inner{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 10rpx;
+}
+.my-ask-whole{
+  font-size: 26rpx;
+  color: #c9ab79;
+}
+.answer-item{
+  display: flex;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  padding-bottom: 50rpx;
+  padding-top: 50rpx;
+}
+.answer{
+   width: 40rpx;
+  height: 40rpx;
+  border-radius: 3px;
+  background-color: #ab79c9;
+  font-size: 24rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content:center;
+}
+.inner{
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 10rpx;
+  width: 90%;
+}
+.above{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   -webkit-display: flex;
+   -webkit-align-items: center;
+   -webkit-justify-content:center;
+   color: #c9ab79;
+   font-size: 26rpx;
+   border-top:1px solid #eee;
+}
+/*底部固定  */
+.position-input{
+  position: fixed;
+  bottom:0;
+  padding: 30rpx;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:space-between;
+}
+.section-s{
+  width:90%;
+}
+.input-s{
+  font-size: 28rpx;
+  background-color: #eeeeee;
+  width: 100%;
+  padding-left: 30rpx;
+  height: 70rpx;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.right-s{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color:#c9ab79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content:center;
+}
+.icon-feiji-x{
+  color: #fff;
+}
