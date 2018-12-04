@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/my_order/my_order",
+    "pages/to_be_paid/to_be_paid",
+    "pages/details_goods_received/details_goods_received",
     "pages/to_be_evaluated/to_be_evaluated",
     "pages/acknowledgement_order/acknowledgement_order",
     "pages/asking_for_details/asking_for_details",

@@ -34,7 +34,9 @@ page{
   color: #ffffff;
   margin-left: 10rpx;
 }
-
+.evaluated-rp{
+  font-size: 26rpx;
+}
 /*main  */
 .inner-wrap{
   padding-top: 10rpx;

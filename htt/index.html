@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/layer.css">
 </head>
 <body>
-
 <div id="app" >
+<!--首页-->
     <div class="htt-wrap"  v-for="item in index" v-if="start == 0">
         <!--logo-->
         <img :src="item.pic"  class="logo" alt="">
         <!--顶部说明按钮-->
         <div class="sm-btn-wrap">
-            <div class="sm-btn"><div class="sm-box">{{item.prize}}</div></div>
-            <div class="sm-btn"><div class="sm-box">{{item.explain}}</div></div>
+            <div class="sm-btn" @click="prize = 1"><div class="sm-box">{{item.prize}}</div></div>
+            <div class="sm-btn" @click="explains = 1"><div class="sm-box">{{item.explain}}</div></div>
         </div>
         <!--main-->
         <div class="main-box">
@@ -25,7 +25,7 @@
                 <img :src="item.contenys" class="contenys" alt="">
                 <div class="btn-wrap">
                     <div class="btn" @click="start = 1">去抽奖</div>
-                    <div class="btn btn2">
+                    <div class="btn btn2" @click="start = 2">
 
                         0元试用
                         <img :src="item.icon" class="index-icon" alt="">
@@ -35,6 +35,7 @@
         </div>
 
     </div>
+    <!--抽奖-->
     <div class="htt-wrap"  v-for="item in draw" v-if="start == 1">
         <!--logo-->
         <img :src="item.pic"  class="logo" alt="">
@@ -126,11 +127,68 @@
         </div>
 
     </div>
+    <!--填写地址-->
+    <div class="htt-wrap-box htt-wrap-box-s" v-for="item in fill">
+        <!--我的奖品-->
+            <div class="prize-box-sho">
+                <!--星星-->
+                <div class="xin1-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+                <div class="xin2-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+                <div class="xin3-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+                <div class="fill-title">实物奖品将按填写地址寄送，请认真填写</div>
 
+                <!--地址-->
+                <div class="box-input-adds" >
+                    <input type="text" placeholder="请输入收货人姓名" name="name" class="input-class">
+                    <input type="number" placeholder="请输入联系方式" name="name" class="input-class">
+                    <div class="city-s">
+                       <img src="images/s_03.png" class="img_row" alt="">
+                       <input type="text" id="picker" @click="runadd" placeholder="请选择省市区"  class="input-class input-class-x">
+                    </div>
+                    <textarea name="#" id="#" cols="30" rows="10" placeholder="请输入详细地址" class="input-class-area"></textarea>
+                </div>
+                <!--btn-->
+                <div class="btn-wrap-add">
+                   <div class="btn"> <a href="" class="a-fw">返回</a></div>
+                    <div class="btn btn2">提交</div>
+                </div>
+            </div>
 
+    </div>
+    <!--0元试用-->
+    <div class="htt-wrap-box-oy " v-if="start == 2" v-for="item in fill">
+        <!--logo-->
+        <img src="images/logo.png"  class="logo" alt="">
+        <!--顶部说明按钮-->
+        <div class="sm-btn-wrap sm-btn-wrap-s">
 
+            <div class="sm-btn" @click="sy_explains = 1"><div class="sm-box">试用说明</div></div>
+        </div>
+        <!--我的奖品-->
+        <div class="prize-box-sho-l">
+            <img src="images/oys.png" class="oys" alt="">
+            <div class="fill-title">请认真填写您的个人信息</div>
+
+            <!--地址-->
+            <div class="box-input-adds-s" >
+                <input type="text" placeholder="请输入收货人姓名" name="name" class="input-class">
+                <input type="number" placeholder="请输入联系方式" name="name" class="input-class">
+                <div class="city-s">
+                    <img src="images/s_03.png" class="img_row" alt="">
+                    <input type="text" id="picker1" @click="runadds" placeholder="请选择省市区"   class="input-class input-class-x">
+                </div>
+                <textarea name="#"  cols="30" rows="10" placeholder="请输入详细地址" class="input-class-area"></textarea>
+            </div>
+            <!--btn-->
+            <div class="btn-wrap-add">
+                <div class="btn" ><a href="" class="a-fw">返回</a></div>
+                <div class="btn btn2">提交</div>
+            </div>
+        </div>
+        <div style="height: 2.5rem;width: 100%"></div>
+    </div>
     <!--mask分享-->
-    <div class="mask-wrap" v-if="start == 2">
+    <div class="mask-wrap" v-if="start == 12">
         <div></div>
         <div class="mask-wrap-box">
         <img src="images/fx.png" class="mask-fx-img" alt="">
@@ -141,20 +199,142 @@
     <div class="zj-mask-in" id="info">
         <div class="zj-mask-wrap">
             <div class="zh-mask-box">
-                <a href=""><div class="cancel"><img :src="zh_img_cos" class="zh_imgs" alt=""></div></a>
+                <a href=""><div class="cancels"><img :src="zh_img_cos" class="zh_imgs" alt=""></div></a>
                 <div class="contents-p">
                     <div class="inners">{{inner}}</div>
                     <div class="innerw">{{innerw}}</div>
                 </div>
                 <div class="btn-zh-wrap" >
-                    <a href=""><div class="btn-zh">确定</div></a>
+                   <div class="btn-zh" id="opern_s">确定</div>
                 </div>
                 <img :src="zh_img" class="img-zh" alt="">
             </div>
         </div>
     </div>
-</div>
+    <!--我的奖品-->
+    <div class="prize-zp-mask" v-if="prize==1">
+        <div class="prize-box">
+             <!--星星-->
+            <div class="xin1-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin2-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin3-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin4-position" @click="prize = 0"><img src="images/cuo_03.png" class="zh_imgs" alt=""></div>
+            
 
+            <!--tab-->
+            <div class="tab-box">
+                <div class="tab-header">
+                    <div class="tab-header-item tab-header-item-le current_tab">未使用</div>
+                    <div class="tab-header-item tab-header-item-ri">已使用</div>
+                </div>
+                <div class="tab-list">
+                    <!--暂无奖品-->
+                    <!--<div class="non-prize">-->
+                        <!--<div>-->
+                        <!--<img src="images/non.png" class="non-prize-img" alt="">-->
+                        <!--<div class="zw-non">暂无奖品</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--tab-->
+                    <div class="tab-item">
+                        <div class="box-inner" v-for="item in tab">
+                            <div class="btn-tab">{{item.btn}}</div>
+                            <img :src="item.logo_user" class="box-inner-img" alt="">
+                            <div class="box-inner-mid">
+                                <div class="box-inner-mid-p">{{item.name}}</div>
+                                <div class="box-inner-mid-w">{{item.contents1}}</div>
+                                <div class="box-inner-mid-w">{{item.contents2}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item non">
+                        2
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--填写信息-->
+    <!--<div class="adds-mask" >-->
+        <!--<div class="adds-mask-box">-->
+            <!--<div class="adds-title">{{add_title}}</div>-->
+            <!--<div class="adds-name">{{add_name}}</div>-->
+            <!--<div class="adds-btn">返回首页</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--说明-->
+    <div class="prize-zp-mask" v-if="explains == 1">
+        <div class="prize-box-explains">
+            <!--星星-->
+            <div class="xin1-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin2-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin3-position"><img src="images/xinxin.png" class="xin" alt=""></div>
+            <div class="xin4-position" @click="explains = 0"><img src="images/cuo_03.png" class="zh_imgs" alt=""></div>
+
+              <!--contents-->
+            <div class="explains-contents">
+                <div class="explains-contents-title">活动时间：2018年4月24日-27日，共4天</div>
+                <div class="explains-contents-p">
+                    活动规则：活动期间内，通过当当购物手机客户端成功购买图书的用户，均视为成功参与此次活动；每个用户只可参与一次。
+                </div>
+                <div class="explains-contents-p">
+                    活动奖励：成功参与此次活动的用户，均可获得10元当当网自营图书音像现金券，此礼券当当网自营图书音像品类通用，
+                    无最低消费限制，不可用于其他类商品交易；现金券有效期5月1日-5月31日，礼券不可转让、不可返现。
+                </div>
+                <div class="explains-contents-p">
+                    奖品发放：交易完成后，3个工作日内发送至参与用户账号
+                </div>
+                <div class="explains-contents-p">
+                    补充说明：此次活动不与当当网客户端用户首单奖励5元活动冲突，可同时参与。
+                </div>
+                <div class="explains-contents-p">
+                    此次活动最终解释权归当当网所有。
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--试用说明-->
+    <div class="prize-zp-mask" v-if="sy_explains==1">
+        <div class="prize-box-explains-sy">
+            <!--星星-->
+            <div class="xin4-position-s" @click="sy_explains = 0"><img src="images/cuo_03.png" class="zh_imgs" alt=""></div>
+
+            <!--contents-->
+            <div class="explains-contents-sy">
+                <div class="explains-contents-title">活动时间：2018年4月24日-27日，共4天</div>
+                <div class="explains-contents-p">
+                    活动规则：活动期间内，通过当当购物手机客户端成功购买图书的用户，均视为成功参与此次活动；每个用户只可参与一次。
+                </div>
+                <div class="explains-contents-p">
+                    活动奖励：成功参与此次活动的用户，均可获得10元当当网自营图书音像现金券，此礼券当当网自营图书音像品类通用，
+                    无最低消费限制，不可用于其他类商品交易；现金券有效期5月1日-5月31日，礼券不可转让、不可返现。
+                </div>
+                <div class="explains-contents-p">
+                    奖品发放：交易完成后，3个工作日内发送至参与用户账号
+                </div>
+                <div class="explains-contents-p">
+                    补充说明：此次活动不与当当网客户端用户首单奖励5元活动冲突，可同时参与。
+                </div>
+                <div class="explains-contents-p">
+                    此次活动最终解释权归当当网所有。
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--特价-->
+    <div class="tj-mask" v-if="te_explains==0">
+        <div class="tj-mask-box">
+            <div class="tj-mask-header">
+                <div class="tj-mask-header-left">黄金套餐</div>
+                <div class="tj-mask-header-right" @click="te_explains=1"><img src="images/cuo_03.png" class="zh_imgs" alt=""></div>
+            </div>
+            <div class="tj-mask-inner">
+
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 
@@ -163,9 +343,11 @@
 <script src="js/vue.js"></script>
 <script src="js/rem.js"></script>
 <script src="js/function.js"></script>
-<script src="js/index.js"></script>
 <script src="js/layer.js"></script>
-
+<script src="js/index.js"></script>
+<script src="js/city.js"></script>
+<script src="js/picker.min.js"></script>
+<script src="js/indexadd.js"></script>
 <script type="text/javascript">
 
     var lottery = {

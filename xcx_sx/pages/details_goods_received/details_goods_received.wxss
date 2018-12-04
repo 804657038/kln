@@ -8,14 +8,97 @@ page{
     background-color: #fff;
 }
 .evaluated-wrap{
-  height: 220rpx;
+  height: 320rpx;
   background-color: #333;
+}
+.evaluated-header{
   display: flex;
   align-items: center;
-  justify-content: center;
-  -webkit-display: flex;
+  justify-content:space-between;
   -webkit-align-items: center;
-  -webkit-justify-content: center;
+  -webkit-display: flex;
+  -webkit-justify-content:space-between;
+  margin: 0 auto;
+  width: 90%;
+  height: 90rpx;
+  border-bottom:1px solid #666666;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.evaluated-header-left{
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.evaluated-header-right{
+   display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-display: flex;
+  color: #c9ab79;
+}
+.evaluated-header-right-l{
+  font-size: 28rpx;
+}
+.icon-you-right-x{
+  font-size: 38rpx;
+}
+.evaluated-contents{
+  height: 105rpx;
+  display: flex;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-justify-content: space-between;
+  color: #666;
+  font-size:26rpx;
+  padding: 0 70rpx;
+}
+.xian{
+  width: 100%;
+  height: 60rpx;
+  background: url('http://i2.bvimg.com/650276/c565d495855be270.png')no-repeat;
+  background-size: 100% 100%;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  -webkit-display: flex;
+  -webkit-justify-content: space-around;
+}
+.wait1{
+  margin-top: -65rpx
+}
+.wait1:nth-child(2){
+  margin-top: -45rpx;
+}
+.wait1:nth-child(3){
+  margin-top: -45rpx;
+}
+.wait-inner-up{
+  font-size: 26rpx;
+  color: #666666;
+}
+.wait-inner-up.wait-inner-up-fz{
+  font-size: 46rpx;
+  color: #c9ab79;
+}
+.dian{
+  width: 15rpx;
+  height: 15rpx;
+  margin: 0 auto;
+  background-color: #c9ab79;
+  border-radius: 50%;
+  margin-top: 20rpx;
+}
+
+.item-p{
+  display: flex;
+  -webkit-display: flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+.item-p-d{
+  font-size:46rpx;
+  color: #c9ab79;
 }
 .evaluated{
   display: flex;
@@ -26,7 +109,7 @@ page{
   -webkit-justify-content: center;
 }
 .icon-note1-x{
-  font-size: 100rpx;
+  font-size: 50rpx;
   color: #c9ab79;
 }
 .evaluated-r{
@@ -34,7 +117,6 @@ page{
   color: #ffffff;
   margin-left: 10rpx;
 }
-
 /*main  */
 .inner-wrap{
   padding-top: 10rpx;

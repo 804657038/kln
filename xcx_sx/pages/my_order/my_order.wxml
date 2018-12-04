@@ -1,0 +1,23 @@
+<view class='nav-list' >
+  <view class='nav-item {{item.cloors}}' wx:for="{{navrty}}">{{item.name}}</view>
+</view>
+<!--contents  -->
+<view class='goods_wrap' wx:for="{{arrwrap}}">
+   <!--header  -->
+  <view class='header-wrap'>
+     <view class='header-left'>{{item.header_left}}</view>
+     <view class='header-right'>{{item.header_right}}</view>
+  </view>
+  <view class='goods' wx:for="{{item.arrty}}" wx:for-item="item">
+   <image class='goods-pic' src='{{item.pic}}'></image>
+   <view class='goods-mid'>
+     <view class='goods-mid-ne'>{{item.ne}}</view>
+     <view class='goods-mid-money'>{{item.money}}</view>
+   </view>
+   <view class='goods-right'><view>{{item.goods_nums}}</view></view>
+  </view>
+  <view class='look-sx'>
+   <view class='look-sx-inner'>总计： <view class='look-sx-inner-p'>{{item.money}}</view>  </view>
+    <view class='look-sx-inner-btn'> 查看详情</view>
+  </view>
+</view> 
